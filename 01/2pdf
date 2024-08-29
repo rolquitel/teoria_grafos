@@ -1,0 +1,1 @@
+jupyter nbconvert cap01.ipynb --to pdf
