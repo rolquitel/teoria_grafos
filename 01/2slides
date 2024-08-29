@@ -1,1 +1,1 @@
-jupyter nbconvert cap01.ipynb --to slides --SlidesExporter.reveal_number='c/t'
+jupyter nbconvert cap01.ipynb --to slides --SlidesExporter.reveal_number='c/t' --SlidesExporter.reveal_scroll=True --SlidesExporter.reveal_theme=simple 
