@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>cap01 slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>cap02 slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7440,19 +7440,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="1.-Introducci%C3%B3n">1. Introducción<a class="anchor-link" href="#1.-Introducci%C3%B3n">¶</a></h1>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>¿Cómo podemos tender un cable con el mínimo coste para que todos los teléfonos sean accesibles desde todos los demás? ¿Cuál es la ruta más rápida desde la capital nacional a la capital de cada estado? ¿Cómo se pueden cubrir $n$ puestos de trabajo con $n$ personas con la máxima utilidad total? ¿Cuál es el caudal máximo por unidad de tiempo desde el origen hasta el destino en una red de tuberías? ¿Cuántas capas necesita un chip de ordenador para que los cables de la misma capa no se crucen? ¿Cómo se puede programar la temporada de una liga deportiva en el mínimo número de semanas? ¿En qué orden debe visitar las ciudades un viajante de comercio para minimizar el tiempo de viaje? ¿Podemos colorear las regiones de cada mapa utilizando cuatro colores para que las regiones vecinas reciban colores diferentes?</p>
-<p>Estos y muchos otros problemas prácticos implican la teoría de grafos. En este libro, desarrollamos la teoría de grafos y la aplicamos a dichos problemas.</p>
+<h1 id="2.-Grados">2. Grados<a class="anchor-link" href="#2.-Grados">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7463,29 +7451,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.1.-%C2%BFQu%C3%A9-es-un-grafo?">1.1. ¿Qué es un grafo?<a class="anchor-link" href="#1.1.-%C2%BFQu%C3%A9-es-un-grafo?">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>El problema que a menudo se dice que fue el nacimiento de la teoría de grafos sugerirá nuestra definición básica de grafo.</p>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="El-problema-de-los-puentes-de-K%C3%B6nigsberg.">El problema de los puentes de Königsberg.<a class="anchor-link" href="#El-problema-de-los-puentes-de-K%C3%B6nigsberg.">¶</a></h3><p>La ciudad de Königsberg estaba situada en el río Pregel, en Prusia. La ciudad ocupaba dos islas y zonas en ambas orillas. Estas regiones estaban conectadas por siete puentes, como se muestra a la izquierda. Los ciudadanos se preguntaban si podían salir de casa, cruzar cada puente exactamente una vez y regresar a casa. El problema se reduce a recorrer la figura de la right, donde los puntos gruesos representan las masas de tierra y las curvas representan los puentes.</p>
+<h2 id="2.1.-El-grado-de-un-v%C3%A9rtice">2.1. El grado de un vértice<a class="anchor-link" href="#2.1.-El-grado-de-un-v%C3%A9rtice">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7496,243 +7462,13 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/puentes.png"/>
-</center></div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>El modelo de la derecha permite argumentar fácilmente que la travesía deseada no existe. Cada vez que entramos y salimos de una masa de tierra, utilizamos dos puentes que terminan en ella. También podemos emparejar el primer puente con el último puente de la masa de tierra donde comenzamos y terminamos. Por lo tanto, la existencia de la travesía deseada requiere que cada masa de tierra esté involucrada en un número par de puentes. Esta condición necesaria no se cumplió en Königsberg.</p>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Definiciones-b%C3%A1sicas">Definiciones básicas<a class="anchor-link" href="#Definiciones-b%C3%A1sicas">¶</a></h3>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un <strong>grafo</strong> $G$ es un par $G=(V, E)$ que consiste en un conjunto finito $V \neq \emptyset$ y un conjunto $E$ de subconjuntos de dos elementos de $V$. Los elementos de $V$ se llaman <em>vértices</em>. Un elemento $e=\{a, b\}$ de $E$ se llama <em>arista</em> con vértices extremos $a$ y $b$.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Un grafo $G$ es un par (en realidad un par ordenado) de dos conjuntos $V$ y $E$. Por esta razón, algunos escriben $G=(V, E)$. A veces, es útil escribir $V(G)$ y $E(G)$ en lugar de $V$ y $E$ para enfatizar que estos son los conjuntos de vértices y aristas de un grafo $G$ en particular.</p>
+<p>El <strong>grado de un vértice</strong> $v$ en un grafo $G$ es el número de aristas incidentes con $v$ y se denota por $\operatorname{deg}_G v$ o simplemente por $\operatorname{deg} v$ si el grafo $G$ se desprende del contexto. Además, deg $v$ es el número de vértices adyacentes a $v$.</p>
+<p>Recordemos que dos vértices adyacentes se denominan vecinos entre sí. El conjunto $N(v)$ de vecinos de un vértice $v$ se denomina <strong>vecindad</strong> de $v$. Por lo tanto, $\operatorname{deg} v=|N(v)|$.</p>
 <ul>
-<li>Aunque $G$ es el símbolo común para usar para un grafo, también usamos $F$ y $H$, así como $G^{\prime}, G^{\prime \prime}$ y $G_1, G_2$, etc.</li>
-<li>Los vértices a veces se llaman <em>puntos</em> o <em>nodos</em> y las aristas a veces se llaman <em>arcos</em>.</li>
-<li>Dos grafos $G$ y $H$ son iguales si $V(G)=V(H)$ y $E(G)=E(H)$, en cuyo caso escribimos $G=H$.</li>
+<li>Un vértice de grado 0 se denomina <strong>vértice aislado</strong> y</li>
+<li><ul>
+<li>un vértice de grado 1 es un <strong>vértice final</strong> (o una <strong>hoja</strong>).</li>
 </ul>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>El número de vértices en $G$ es llamado <strong>orden</strong> (denotado por $n$), mientras que el número de aristas es su <strong>tamaño</strong> (denotado por $m$).</p>
-<ul>
-<li>Como el conjunto de vértices no está vacío, el orden de cada grafo es por lo menos de 1.</li>
-</ul>
-</blockquote>
-<p>El grafo con exactamente un vértice es llamado <strong>grafo trivial</strong>.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>A menudo ilustraremos grafos con dibujos en el plano. Los vértices de un grafo $G=(V, E)$ se representan por puntos (en negrita) y las aristas por líneas (preferiblemente líneas rectas) que conectan los puntos finales.</p>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Ejemplo</em> En el grafo anterior, el conjunto de vértices es $\{x, y, z, w\}$, el conjunto de aristas es $\left\{e_1, e_2, e_3, e_4, e_5, e_6, e_7\right\}$, y la asignación de extremos a aristas se puede leer en la imagen.</p>
-<p>Nótese que las aristas $e_1$ y $e_2$ tienen los mismos extremos, al igual que $e_3$ y $e_4$. Además, si tuviéramos un puente sobre un canal, sus extremos estarían en la misma masa de tierra y lo dibujaríamos como una curva con ambos extremos en el mismo punto. Tenemos términos apropiados para este tipo de aristas en los grafos.</p>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Se dice que una arista es <strong>incidente</strong> a cada uno de los vértices que conecta. Es decir si $ e=\{a, b\} \in E $ entonces $e$ es incidente en $a$, así como en $b$, para $ a,b \in V$.</p>
-</blockquote>
-<blockquote>
-<p>Si dos aristas inciden en un mismo nodo, se dice que son <strong>aristas adyacentes</strong>. Es decir, si $ e_1 =\{ a, b\} \in E$ y $ e_2 =\{ a, c\} \in E$ entonces $e_1$ y $e_2$ son aristas adyacentes, para $ a,b,c \in V $.</p>
-</blockquote>
-<blockquote>
-<p>Un <strong>bucle</strong> es una arista cuyos puntos finales son iguales. Es decir, si $ e = \{a,a\} \in E$ entonces $e$ es un bucle, para $ a \in V $</p>
-</blockquote>
-<blockquote>
-<p>Las <strong>aristas múltiples</strong> son aristas que tienen el mismo par de puntos finales. Es decir, si $ e = \{ a,b\} \in E$ y $ \exists e_1, e_2, ... , e_k \in E $ tal que $ e_1 = e_2 = ... = e_k = e$ para $ k&lt; |V|$, entonces $ e, e_1, e_2, ... , e_k $ son aristas múltiples.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un <strong>grafo simple</strong> es un grafo que no tiene bucles o múltiples aristas.</p>
-</blockquote>
-<p>Especificamos un grafo simple por su conjunto de vértices y su conjunto de aristas, tratando el conjunto de aristas como un conjunto de pares de vértices no ordenados y escribiendo $e=u v$ (o $e=v u$ ) para una arista $e$ con puntos finales $u$ y $v$.</p>
-<blockquote>
-<p>Cuando $u$ y $v$ son los puntos finales de una arista, son <strong>adyacentes</strong> y son <strong>vecinos</strong>. Escribimos $u \leftrightarrow v$ para " $u$ es adyacente a $v$ ". Es decir, si $ \{ a, b\} \in E $ entonces $a$ y $b$ son vecinos.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Ejemplo.</em> A la izquierda, a continuación, se muestran dos dibujos de un grafo simple. El conjunto de vértices es $\{u, v, w, x, y\}$, y el conjunto de aristas es $\{u v, u w, u x, v x, v w, x w, x y\}$.</p>
-<center>
-<img alt="No description has been provided for this image" src="./fig/ejemplo1.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Los términos "vértice" y "arista" surgen de la geometría de sólidos. Un cubo tiene vértices y aristas, y estos forman el conjunto de vértices y el conjunto de aristas de un grafo. Se dibuja a la derecha, a continuación, omitiendo los nombres de vértices y aristas.</p>
-<blockquote>
-<p>Un grafo es <strong>finito</strong> si su conjunto de vértices y su conjunto de aristas son finitos.</p>
-</blockquote>
-<p>De aquí en adelante consideraremos que todos los grafos que utilicemos son finitos.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>El <strong>grafo nulo</strong> es el grafo cuyo conjunto de vértices y aristas están vacíos.</p>
-</blockquote>
-<p>Extender los teoremas generales al grafo nulo introduce distracciones innecesarias, por lo que lo ignoramos. Todas las afirmaciones y ejercicios deben considerarse solo para grafos con un conjunto de vértices no vacío.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Subgrafos">Subgrafos<a class="anchor-link" href="#Subgrafos">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Un grafo $H$ se denomina <strong>subgrafo</strong> de un grafo $G$, escrito $H \subseteq G$, si $V(H) \subseteq V(G)$ y $E(H) \subseteq E(G)$.</p>
-<ul>
-<li>También decimos que $G$ <strong>contiene</strong> a $H$ como subgrafo.</li>
-</ul>
-<blockquote>
-<p>Si $H \subseteq G$ y $V(H)$ es un subconjunto propio de $V(G)$ o $E(H)$ es un subconjunto propio de $E(G)$, entonces $H$ es un <strong>subgrafo propio</strong> de $G$.</p>
-</blockquote>
-<ul>
-<li>Por lo tanto, el grafo $H$ de la figura es un subgrafo del grafo $G$ ; de hecho, $H$ es un subgrafo propio de $G$.</li>
-</ul>
-<blockquote>
-<p>Si un subgrafo de un grafo $G$ tiene el mismo conjunto de vértices que $G$, entonces es un <strong>subgrafo generador</strong> de $G$.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/subgrafos.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>El subgrafo $F$ de un grafo $G$ se llama <strong>subgrafo inducido</strong> de $G$ si siempre que $u$ y $v$ son vértices de $F$ y $u v$ es una arista de $G$, entonces $u v$ es también una arista de $F$.</p>
-</blockquote>
-<ul>
-<li><p>Por lo tanto, el grafo $H$ no es un subgrafo inducido del grafo $G$ ya que, por ejemplo, $v, x \in V(H)$ y $v x \in E(G)$ pero $v x \notin E(H)$.</p>
-</li>
-<li><p>Por otro lado, el grafo $F$ es un subgrafo inducido de $G$.</p>
 </li>
 </ul>
 </div>
@@ -7745,144 +7481,11 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Si $S$ es un conjunto no vacío de vértices de un grafo $G$, entonces el subgrafo de $G$ inducido por $S$ es el subgrafo inducido con el conjunto de vértices $S$. Este subgrafo inducido se denota por $G[S]$.</p>
-<p>Para un conjunto no vacío $X$ de aristas, el subgrafo $G[X]$ inducido por $X$ tiene el conjunto de aristas $X$ y consta de todos los vértices que inciden con al menos una arista en $X$. Este subgrafo se denomina subgrafo inducido por aristas de $G$.</p>
-<p>A veces se utilizan $\langle S \rangle _G$ y $\langle X \rangle _G$ para $G[S]$ y $G[X]$, respectivamente.</p>
-<ul>
-<li>El grafo $F^{\prime}$ es un subgrafo inducido por aristas de $G$ en esa figura; de hecho, $F^{\prime}=G\left[X^{\prime}\right]$, donde $X^{\prime}=\left\{\mathrm{e}, \mathrm{e}^{\prime}\right\}$.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Para una arista $e$ de $G$, escribimos $G-e$ para el subgrafo generador de $G$ cuyo conjunto de aristas consiste en todas las aristas de $G$ excepto $e$.</p>
 <blockquote>
-<p>De manera más general, si $X$ es un conjunto de aristas de $G$, entonces $G-X$ es el subgrafo generador de $G$ con $E(G-X)=E(G)-$ $X$.</p>
-<ul>
-<li>Para el grafo $G$ de la figura y $e=v y$, se muestra el subgrafo $G-e$. Si $X=$ $\left\{e_1, e_2, \ldots, e_k\right\}$, entonces también escribimos $\mathrm{G}-X$ como $\mathrm{G}-e_1-e_2-\ldots-e_k$.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Para un vértice $v$ de un grafo no trivial $G$, el subgrafo $G-v$ consiste en todos los vértices de $G$ excepto $v$ y todas las aristas de $G$ excepto aquellas incidentes con $v$.</p>
-<blockquote>
-<p>Para un subconjunto propio $U$ de $V(G)$, el subgrafo $G-U$ tiene como conjunto de vértices $V(G)-U$ y su conjunto de aristas consiste en todas las aristas de $G$ que unen dos vértices en $V(G)-U$. Necesariamente, $G-U$ es un subgrafo inducido de $G$.</p>
-<ul>
-<li>Para $U=\{u, y\}$ en el grafo $G$ de la figura, $G-U$ es el subgrafo $F$ que se muestra en esa misma.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Si $u$ y $v$ son vértices no adyacentes de un grafo $G$, entonces $e=\{u,v\} \notin E(G)$. Por $G+e$, nos referimos al grafo con el conjunto de vértices $V(G)$ y el conjunto de aristas $E(G) \cup\{e\}$. Por lo tanto, $G$ es un subgrafo generador de $G+e$.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p><strong>Definición.</strong> El complemento $\bar{G}$ de un grafo simple $G$ es el grafo simple con conjunto de vértices $V(G)$ definido por $u v \in E(\bar{G})$ si y solo si $u v \notin E(G)$.</p>
-</blockquote>
-<blockquote>
-<p><strong>Definición.</strong> Un <em>clique</em> (o camarilla) en un grafo es un conjunto de vértices adyacentes por pares, es decir, que tienen aristas entre sí.</p>
-</blockquote>
-<blockquote>
-<p><strong>Definición.</strong> Un <em>conjunto independiente</em> (o conjunto estable) en un grafo es un conjunto de vértices no adyacentes por pares, es decir que no comparten ninguna arista entre sí.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Ejemplo.</em> Relaciones de conocidos y subgrafos. ¿Cada conjunto de seis personas contiene tres conocidos mutuos o tres desconocidos mutuos? Como el "conocido" es simétrico, lo modelamos utilizando un grafo simple con un vértice para cada persona y una arista para cada par de conocidos. La relación de "no conocidos" en el mismo conjunto produce otro grafo con el conjunto de aristas "complementarias". Introducimos términos para estos conceptos.</p>
-<center>
-<img alt="No description has been provided for this image" src="./fig/complemento.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En el grafo anterior, $\{u, x, y\}$ es una camarilla de tamaño 3 y $\{u, w\}$ es un conjunto independiente de tamaño 2, y estos son los conjuntos más grandes de este tipo.</p>
-<p>Estos valores se invierten en el complemento $\bar{G}$, ya que las camarillas se convierten en conjuntos independientes (y viceversa) bajo complementación.</p>
-<p>La pregunta del ejemplo es si es cierto que cada grafo de 6 vértices tiene una camarilla de tamaño 3 o un conjunto independiente de tamaño 3. Si eliminamos la arista $u x$ de $G$ obtenemos un grafo de 5 vértices que no tiene camarilla ni conjunto independiente de tamaño 3.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Recorridos,-senderos-y-caminos">Recorridos, senderos y caminos<a class="anchor-link" href="#Recorridos,-senderos-y-caminos">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Muchos de los conceptos que aparecen en la teoría de grafos y que investigaremos en detalle más adelante se refieren a diversas formas en las que uno puede "moverse" en un grafo. En particular, si pensamos en los vértices de un grafo como ubicaciones y en las aristas como caminos entre ciertos pares de ubicaciones, entonces el grafo puede considerarse como el modelo de una comunidad. Hay una variedad de tipos de viajes que se pueden realizar en la comunidad.</p>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Recorrido">Recorrido<a class="anchor-link" href="#Recorrido">¶</a></h5><p>Empecemos en algún vértice $u$ de un grafo $G$. Si procedemos desde $u$ a un vecino de $u$ y luego a un vecino de ese vértice y así sucesivamente, hasta que finalmente nos detenemos en un vértice $v$, entonces acabamos de describir un recorrido desde $u$ a $v$ en $G$.</p>
-<blockquote>
-<p>Un <strong>recorrido</strong> (<em>walk</em>) $u-v$ $W$ en $G$ es una secuencia de vértices en $G$, que comienza con $u$ y termina en $v$ de manera que los vértices consecutivos en la secuencia son adyacentes, es decir, podemos expresar $W$ como
+<p>El <strong>grado mínimo</strong> de $G$ es el grado mínimo entre los vértices de $G$ y se denota por $\delta(G)$; el <strong>grado máximo</strong> de $G$ se denota por $\Delta(G)$. Por lo tanto, si $G$ es un grafo de orden $n$ y $v$ es cualquier vértice de $G$, entonces</p>
 $$
-W=\left(u=v_0, v_1, \ldots, v_k=v\right)
-$$</p>
-<p>donde $k \geq 0$ y $v_i$ y $v_{i+1}$ son adyacentes para $i=0,1,2, \ldots, k-1$.</p>
-</blockquote>
+0 \leq \delta(G) \leq \operatorname{deg} v \leq \Delta(G) \leq n-1
+$$</blockquote>
 </div>
 </div>
 </div>
@@ -7893,186 +7496,11 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El grafo $G$ de la Figura 2.1.1 tiene orden 6 y tamaño 5. Cada vértice de $G$ está etiquetado con su grado.</p>
 <ul>
-<li>Se dice que cada vértice $v_i$ $(0 \leq i \leq k)$ y cada arista $v_i v_{i+1}(0 \leq i \leq k-1)$ se encuentran sobre o pertenecen a $W$.</li>
-<li>Nótese que la definición del recorrido $W$ no requiere que los vértices enumerados sean distintos; de hecho, ni siquiera se requiere que $u$ y $v$ sean distintos.<ul>
-<li>Sin embargo, cada dos vértices consecutivos en $W$ son distintos ya que son adyacentes.</li>
-</ul>
-</li>
-<li>Si $u=v$, entonces el recorrido $W$ es <strong>cerrado</strong>; mientras que si $u \neq v$, entonces $W$ es <strong>abierto</strong>.</li>
-<li>El número de aristas encontradas en una recorrido (incluyendo múltiples ocurrencias de una arista) se llama <strong>longitud</strong> del recorrido. Por lo tanto, la longitud de $W$ es $k$.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Senderos-y-caminos">Senderos y caminos<a class="anchor-link" href="#Senderos-y-caminos">¶</a></h5><blockquote>
-<p>Un <strong>sendero</strong> (<em>trail</em>) $u-v$ en un grafo $G$ como un recorrido $u-v$ en el que ninguna arista se recorre más de una vez. Por lo tanto, el recorrido $x-$ $w$ $W$ en (1.2) no es un sendero $x-w$ ya que la arista wy se repite.</p>
-<ul>
-<li>Aunque la definición de un sendero estipula que ninguna arista puede repetirse, no se impone tal condición a los vértices.</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>Un recorrido $u-v$ en un grafo en el que no se repiten vértices es un <strong>camino</strong> (<em>path</em>) $u-v$.</p>
-<ul>
-<li>Si ningún vértice en un camino se repite (lo que produce un camino), entonces ninguna arista se repite tampoco. Por lo tanto, todo camino es un sendero.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Si un recorrido $u-v$ en un grafo es seguido por un recorrido $v-w$, entonces resulta un recorrido $u-w$.</p>
-<p>Un camino $u-v$ seguido por un camino $v-w$ es un recorrido $u-w$ $W$ pero no necesariamente un camino $u-w$, ya que los vértices en $W$ pueden repetirse.</p>
-<p>Si bien no todo camino es un recorrido, si un grafo contiene un recorrido $u-v$, entonces también debe contener un camino $u-v$.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p><strong>Teorema 1.1.1.</strong> Si un grafo $G$ contiene un recorrido $u-v$ de longitud $l$, entonces $G$ contiene un camino $u-v$ de longitud como máximo $l$.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Demostración</em>.</p>
-<ul>
-<li>Entre todos los recorridos $u-v$ en $G$, sea $P=(u=u_0, u_1, \ldots, u_k=v)$ un recorrido $u-v$ de longitud mínima $k$. Por lo tanto, $k \leq l$.</li>
-<li>Afirmamos que $P$ es un camino $u-v$. Supongamos, por el contrario, que este no es el caso.</li>
-<li>Entonces algún vértice de $G$ debe repetirse en $P$, digamos $u_i=u_j$ para algún $i$ y $j$ con $0 \leq i&lt;j \leq k$.</li>
-<li>Si luego eliminamos los vértices $u_{i+1}, u_{i+2}, \ldots, u_j$ de $P$, llegamos al recorrido $u-v : \left(u=u_0, u_1, \ldots, u_{i-1}, u_i=u_j, u_{j+1}, \ldots, u_k=v\right)$ cuya longitud es menor que $k$, lo cual es imposible.</li>
-<li>Por lo tanto, como se afirma, $P$ es un camino $u-v$ de longitud $k \leq l$.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Circuitos-y-ciclos">Circuitos y ciclos<a class="anchor-link" href="#Circuitos-y-ciclos">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un <strong>circuito</strong> en un grafo $G$ es un sendero cerrado de longitud 3 o más.</p>
-<ul>
-<li>Por lo tanto, un circuito comienza y termina en el mismo vértice pero no repite ninguna arista.</li>
-<li>Los vértices se pueden repetir, además del primero y el último.</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>Un circuito que no repite ningún vértice, excepto el primero y el último, es un <strong>ciclo</strong>.</p>
-<ul>
-<li>Un $k$-ciclo es un ciclo de longitud $k$.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Los subgrafos $G_1, G_2, G_3, G_4$ del grafo $G$ son un sendero, un camino, un circuito y un ciclo del grafo G, respectivamente.</p>
-<center>
-<img alt="No description has been provided for this image" src="./fig/ciclos.png"/>
-</center></div>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.2.-Conectividad">1.2. Conectividad<a class="anchor-link" href="#1.2.-Conectividad">¶</a></h2>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>$u,v \in E $ están <strong>conectados</strong> si hay algún camino $u-v$ en $G$; no significa que $u$ y $v$ estén unidos por una arista.</p>
-<ul>
-<li>Por supuesto, si $ \{u,v\} \in E$, entonces $u$ también está conectado a $v$.</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>Un grafo $G$ es <strong>conexo</strong> si cualquier pareja de vértices de $G$ están conectados, es decir, si $G$ contiene un camino $u-v$ para cada par $u, v \in V(G)$.</p>
-<ul>
-<li>Como cada vértice está conexo consigo mismo, el grafo trivial es conexo.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un grafo $G$ que no es conexo se llama <strong>desconectado</strong>.</p>
-</blockquote>
-<blockquote>
-<p>Un subgrafo conexo de $G$ que no es un subgrafo propio de ningún otro subgrafo conexo de $G$ es un <strong>componente</strong> de $G$.</p>
-<ul>
-<li>El número de componentes de un grafo $G$ se denota por $k(G)$.</li>
-<li>Por lo tanto, un grafo $G$ es conexo si y solo si $k(G)=1$.</li>
-</ul>
-</blockquote>
-<p>Mientras que el grafo $G$ de la figura anterior es conexo, el grafo $H$ de la figura siguiente es desconexo</p>
-<ul>
-<li>no hay un camino $s-w$ en $H$.</li>
-<li>Tampoco hay un camino $x-z$.</li>
-<li>El grafo $H$ tiene tres componentes, a saber, $H_1, H_2$ y $H_3$ y, por lo tanto, $k(H)=3$.</li>
+<li>Como $G$ contiene un vértice aislado, a saber, $u$, se deduce que $\delta(G)=0$.</li>
+<li>Además, $w$ tiene el mayor grado en $G$ y, por lo tanto, $\Delta(G)=\operatorname{deg} w=4$.</li>
+<li>Tanto $v$ como $z$ son vértices finales de $G$ ya que $\operatorname{deg} v=\operatorname{deg} z=1$.</li>
 </ul>
 </div>
 </div>
@@ -8085,7 +7513,64 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <center>
-<img alt="No description has been provided for this image" src="./fig/desconectado.png"/>
+<img alt="No description has been provided for this image" src="./fig/grafo1.png"/>
+<p>Figura 2.1.1. Un grafo $G$ con $\delta (G) = 0$ y $ \Delta (G) = 4$.</p>
+</center>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Si sumamos los grados de los vértices de $G$, obtenemos $0+1+1+2+2+4=10$, que resulta ser el doble del tamaño de $G$. Esto no es una coincidencia, como lo demostramos en nuestro siguiente teorema, que a menudo se denomina el <strong>Primer Teorema de la Teoría de Grafos</strong>, llamado así porque es probable que cualquiera que estudie teoría de grafos por primera vez descubra este resultado como su propio primer teorema sobre el tema.</p>
+<blockquote>
+<p><strong>Teorema 2.1.1</strong> (El Primer Teorema de la Teoría de Grafos) Si $G$ es un grafo de tamaño $m$, entonces</p>
+$$
+\sum_{v \in V(G)} \operatorname{deg} v=2 m
+$$</blockquote>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Demostración</em>.</p>
+<p>Al sumar los grados de los vértices de $G$, cada arista de $G$ se cuenta dos veces, una por cada uno de sus dos vértices incidentes.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Supóngase que $G$ es un grafo bipartito de tamaño $m$ con conjuntos particulados $U=\left\{u_1, u_2, \ldots\right.$, $\left.u_s\right\}$ y $W=\left\{w_1, w_2, \ldots, w_t\right\}$. Como cada arista de $G$ une un vértice de $U$ y un vértice de $W$, se deduce que al sumar los grados de los vértices en $U$ (o en $W$) se obtiene el número de aristas en $G$, es decir,</p>
+$$
+\sum_{i=1}^s \operatorname{deg} u_i=\sum_{j=1}^t \operatorname{deg} w_j=m
+$$<p>Un vértice de grado par se denomina vértice par, mientras que un vértice de grado impar es un vértice impar. Volviendo al grafo $G$ de la Figura 2.1.2, vemos que tiene seis vértices pares y ocho vértices impares. En particular, el número de vértices impares de $G$ es par. Demostramos que este es el caso para cada grafo.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/grafo-14-27.png"/>
+<p>Figura 2.1.2. Un grafo de orden 14 y tamaño 27.</p>
 </center></div>
 </div>
 </div>
@@ -8096,20 +7581,8 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Clases-de-equivalencia">Clases de equivalencia<a class="anchor-link" href="#Clases-de-equivalencia">¶</a></h4><p>Para los subgrafos $G_1, G_2, \ldots, G_k, k \geq 2$, de un grafo $G$, con conjuntos de vértices mutuamente disjuntos, escribimos $G=G_1 \cup G_2 \cup \ldots \cup G_k$ si cada vértice y cada arista de $G$ pertenecen exactamente a uno de estos subgrafos.</p>
-<p>En este caso, $G$ es la unión de los grafos $G_1, G_2, \ldots, G_k$. En particular, escribimos $G=G_1 \cup G_2 \cup \ldots \cup G_k$ si $G_1, G_2$, $\ldots, G_k$ son componentes de $G$. Es decir, todo grafo es la unión de sus componentes.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <blockquote>
-<p><strong>Teorema 1.2.1.</strong> Sea $R$ la relación definida en el conjunto de vértices de un grafo $G$ por $u$ $R v$, donde $u, v \in V(G)$, si $u$ está conexo con $v$, es decir, si $G$ contiene un camino $u-v$. Entonces $R$ es una relación de equivalencia.</p>
+<p><strong>Corolario 2.1.1.</strong> Todo grafo tiene un número par de vértices impares.</p>
 </blockquote>
 </div>
 </div>
@@ -8123,12 +7596,37 @@ $$</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><em>Demostración</em>.</p>
 <ul>
-<li>Es inmediato que $R$ es reflexivo y simétrico.</li>
-<li>Por lo tanto, sólo queda demostrar que $R$ es transitivo.<ul>
-<li>Sea $u, v, w \in V(G)$ tal que $u R v$ y $v R w$.</li>
-<li>Por lo tanto, $G$ contiene un camino $u-v$ $P^{\prime}$ y un camino $v-w$ $P^{\prime \prime}$.</li>
-<li>Como hemos visto antes, seguir $P^{\prime}$ por $P^{\prime \prime}$ produce un recorrido $u-w$ $W$.</li>
-<li>Por el Teorema 1.1.1, $G$ contiene un camino $u$ - $w$ y por lo tanto $u R w$.</li>
+<li>Sea $G$ un grafo de tamaño $m$.</li>
+<li>Divida $V(G)$ en dos subconjuntos $V_1$ y $V_2$, donde $V_1$ consta de los vértices impares de $G$ y $V_2$ consta de los vértices pares de $G$. Por el primer teorema de la teoría de grafos:</li>
+</ul>
+$$
+\sum_{v \in V(G)} \operatorname{deg} v=\sum_{v \in V_1} \operatorname{deg} v+\sum_{v \in V_2} \operatorname{deg} v=2 m
+$$<ul>
+<li>El número $\sum_{v \in V_2} \operatorname{deg} v$ es par, ya que es una suma de números enteros pares. Por lo tanto,</li>
+</ul>
+$$
+\sum_{v \in V_1} \operatorname{deg} v=2 m-\sum_{v \in V_2} \operatorname{deg} v
+$$<ul>
+<li>lo que implica que $\sum_{v \in V_1} \operatorname{deg} v$ es par.</li>
+<li>Como cada uno de los números $\operatorname{deg} v, v \in$ $V_1$, es impar, la cantidad de vértices impares de $G$ es par.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Si un grafo $G$ de orden $n$ contiene un vértice de grado $n-1$, entonces $G$ es conexo.</p>
+<ul>
+<li>Supongamos que $\operatorname{deg} w=n-1$.</li>
+<li>Por lo tanto, $w$ es adyacente a todos los demás vértices de $G$.</li>
+<li>Para demostrar que $G$ es conexo, necesitamos demostrar que cada par $x, y$ de vértices de $G$ son conexos, es decir, $G$ contiene un camino $x-y$.<ul>
+<li>Esto es claramente cierto si uno de $x$ e $y$ es $w$.</li>
+<li>Si ni $x$ ni $y$ son $w$, entonces como $w$ es adyacente tanto a $x$ como a $y$, se deduce que ( $x, w, y$ ) es un camino $x-y$ y, en consecuencia, $G$ contiene un camino $x-y$.</li>
 </ul>
 </li>
 </ul>
@@ -8142,20 +7640,9 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>La relación de equivalencia descrita en el Teorema 1.2 produce una partición del conjunto de vértices de cada grafo $G$ en clases de equivalencia. El subgrafo de $G$ inducido por los vértices en una clase de equivalencia es un componente de $G$.</p>
-<p>Cada vértice y cada arista de un grafo $G$ pertenecen exactamente a un componente de $G$. Esto implica que si $G$ es un grafo desconectado y $u$ y $v$ son vértices que pertenecen a diferentes componentes de $G$, entonces $ \{u,v\} \notin E(G)$.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Esta condición de grado no es necesaria para que un grafo sea conexo.</p>
 <blockquote>
-<p>*<strong>Teorema 1.2.2.</strong>* Sea $G$ un grafo de orden 3 o más. Si $G$ contiene dos vértices distintos $u$ y $v$ tales que $G-u$ y $G-v$ son conexos, entonces $G$ mismo es conexo.</p>
+<p><strong>Teorema 2.1.2.</strong> Sea $G$ un grafo de orden $n$. Si $\operatorname{deg} u+\operatorname{deg} v \geq n-1 $ para cada dos vértices no adyacentes $u$ y $v$ de $G$, entonces $G$ es conexo y $\operatorname{diam}(G) \leq 2$.</p>
 </blockquote>
 </div>
 </div>
@@ -8168,14 +7655,13 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><em>Demostración</em>.</p>
-<p>Supóngase que $G$ contiene vértices distintos $u$ y $v$ tales que $G-u$ y $G$ $-v$ son conexos. Para demostrar que $G$ mismo es conexo, demostramos que cada par de vértices de $G$ son conexos.</p>
+<p>Demostramos que cada dos vértices distintos de $G$ están conectados por un camino de longitud como máximo 2.</p>
 <ul>
-<li>Sean $x$ e $y$ dos vértices de $G$. Consideremos dos casos.<ul>
-<li><em>Caso 1.</em> $\{x, y\} \neq\{u, v\}$, digamos $u \notin\{x, y\}$. Entonces $x$ e $y$ son vértices en $G-u$. Como $G-u$ es conexo, hay un camino $x-y$ $P$ en $G-u$. Por lo tanto, $P$ está en $G$ y $x$ e $y$ están conexos en $G$.</li>
-<li><em>Caso 2.</em> $\{x, y\}=\{u, v\}$, digamos $x=u$ e $y=v$. Demostramos que $u$ y $v$ están conexos en $G$. Como el orden de $G$ es al menos 3 , hay un vértice $w$ en $G$ tal que $w \neq u, v$. Como $G-v$ está conexo, $G-v$ contiene un camino $u-w$ $P^{\prime}$. Además, como $G-u$ está conexo, $G-u$ contiene un camino $w-v$ $P^{\prime \prime}$. Por lo tanto, $P^{\prime}$ seguido de $P^{\prime \prime}$ produce un recorrido $u-v$. Según el Teorema 1.1.1, $G$ contiene un camino $u-v$ y, por lo tanto, $u$ y $v$ están conectados en $G$.</li>
+<li>Sea $x, y \in V(G)$.</li>
+<li>Si $x y \in E(G)$, entonces $(x, y)$ es un camino y $x$ e $y$ están ciertamente conexos.</li>
+<li>Si $x y \notin E(G)$, entonces, $\operatorname{deg} x+\operatorname{deg} y \geq n-1$, lo que implica que debe haber un vértice $w$ que sea adyacente tanto a $x$ como a $y$.</li>
+<li>Por lo tanto, $(x, w, y)$ es un camino en $G$, como se desea.</li>
 </ul>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -8186,73 +7672,9 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Si $G$ es el grafo desconectado que consta de dos vértices $u$ y $v$ y no tiene aristas, entonces los subgrafos $G-u$ y $G-v$ están (trivialmente) conectados. Por lo tanto, en el Teorema 1.2.2, es esencial que el orden del grafo en consideración sea al menos 3.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Distancia">Distancia<a class="anchor-link" href="#Distancia">¶</a></h4><blockquote>
-<p>La <strong>distancia</strong> entre $u$ y $v$ es la longitud más pequeña de cualquier camino $u-v$ en $G$ y se denota por $d_G(u, v)$ o simplemente $d(u, v)$ si el grafo $G$ en consideración es claro.</p>
-<ul>
-<li>Por lo tanto, si $d(u, v)=k$, entonces existe un camino $u-v$ $ P=\left(u=v_0, v_1, \ldots, v_k=v\right)$ de longitud $k$ en $G$ pero no existe ningún camino $u-v$ de longitud menor en $G$.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Un camino $u-v$ de longitud $d(u, v)$ se llama <strong>geodésica $u-v$</strong>. De hecho, puesto que el camino $P$  es una geodésica $u-v$, no sólo es $d(u, v)=d\left(u, v_k\right)=k$ sino $d\left(u, v_i\right)=i$ para cada $i$ con $0 \leq i$ $\leq k$.</p>
-<p>En general, $0 \leq d(u, v) \leq n-1$ para cada dos vértices $u$ y $v$ (distintos o no) en un grafo conexo de orden $n$.</p>
-<p>Si $G$ está desconectado, entonces hay algunos pares $x, y$ de vértices distintos de $G$ tales que no hay un camino $x-y$ en $G$. En este caso, $d(x, y)$ no está definido.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Di%C3%A1metro">Diámetro<a class="anchor-link" href="#Di%C3%A1metro">¶</a></h5><blockquote>
-<p>La mayor distancia entre dos vértices cualesquiera de un grafo conexo $G$ se denomina <strong>diámetro</strong> de $G$ y se denota por diam $(G)$.</p>
-</blockquote>
-<p>Si $G$ es un grafo conexo tal que $d(u, v)=\operatorname{diam}(G)$ y $w \neq u, v$, entonces ninguna geodésica $u-w$ puede contener a $v$, pues de lo contrario $d(u, w)&gt;d(u, v)=\operatorname{diam}(G)$, lo cual es imposible.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Regresemos al Teorema 1.3, donde demostramos que si un grafo $G$ de orden 3 contiene dos vértices distintos $u$ y $v$ tales que $G-u$ y $G-v$ son conexos, entonces $G$ es conexo. En realidad, el inverso de este teorema también es cierto; es decir, si $G$ es un grafo conexo de orden al menos 3, entonces $G$ debe contener dos vértices $u$ y $v$ tales que $G-u$ y $G-v$ sean conexos. Ahora estamos en condiciones de demostrar también este teorema.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El teorema 2.1.2 implica que si $G$ es un grafo de orden $n$ tal que $\operatorname{deg} v \geq \frac{(n-1)} {2}$ para cada vértice $v$ de $G$, entonces $G$ debe ser conexo.</p>
 <blockquote>
-<p><strong>Teorema 1.2.3.</strong> Si $G$ es un grafo conexo de orden 3 o más, entonces $G$ contiene dos vértices distintos $u$ y $v$ tales que $G-u$ y $G-v$ son conexos.</p>
+<p><strong>Corolario 2.1.2</strong> Si $G$ es un grafo de orden $n$ con $\delta(G) \geq \frac{(n-1)} {2}$, entonces $G$ es conexo.</p>
 </blockquote>
 </div>
 </div>
@@ -8266,11 +7688,12 @@ $$</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><em>Demostración</em>.</p>
 <ul>
-<li>Sean $u$ y $v$ dos vértices de $G$ tales que $d(u, v)=\operatorname{diam}(G)$.</li>
-<li>Afirmamos que $G-u$ y $G-v$ son ambos conexos. Supongamos que este no es el caso. Entonces al menos uno de $G-u$ y $G-v$ está desconectado, digamos que $G-v$ está desconectado.</li>
-<li>Por lo tanto, $G-v$ contiene dos vértices $x$ e $y$ que no están conexos en $G-v$. Sin embargo, como $G$ está conexo, los vértices $u$ y $x$ están conexos en $G$, al igual que $u$ e $y$.</li>
-<li>Sea $P^{\prime}$ una geodésica $x-u$ en $G$ y sea $P^{\prime \prime}$ una geodésica $u-y$ en $G$. Como $d_G(u, v)=\operatorname{diam}(G)$, el vértice $v$ no puede estar ni en $P^{\prime}$ ni en $P^{\prime \prime}$, por lo que $P^{\prime}$ y $P^{\prime \prime}$ son caminos en $G-v$. El camino $P^{\prime}$ seguido de $P^{\prime \prime}$ produce un recorrido $x-y$ $W$ en $G-v$.</li>
-<li>Por el Teorema 1.1.1, $G-v$ contiene un camino $x-y$ y por lo tanto $x$ e $y$ son conexos en $G$ $-v$. Esto es una contradicción.</li>
+<li>Por cada dos vértices no adyacentes $u$ y $v$ de $G$,</li>
+</ul>
+$$
+\operatorname{deg} u+\operatorname{deg} v \geq \frac{n-1}{2}+\frac{n-1}{2}=n-1
+$$<ul>
+<li>Por el Teorema 2.1.2, $G$ es conexo.</li>
 </ul>
 </div>
 </div>
@@ -8282,10 +7705,33 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>El Teorema 1.2.3 da una propiedad que todo grafo conexo de orden al menos 3 debe tener. Es decir, el Teorema 1.4 proporciona una condición necesaria para que un grafo sea conexo. En realidad, el Teorema 1.2.3 es verdadero incluso si el orden de $G$ es 2, pero enunciamos el Teorema 1.4 como lo hicimos para poder combinar los Teoremas 1.2.3 y 1.2.2 en una única condición necesaria y suficiente para que un grafo sea conexo, que enunciamos a continuación.</p>
-<blockquote>
-<p><strong>Teorema 1.2.4.</strong> Sea $G$ un grafo de orden 3 o más. Entonces $G$ es conexo si y solo si $G$ contiene dos vértices distintos $u$ y $v$ tales que $G-u$ y $G-v$ son conexos.</p>
-</blockquote>
+<p>El concepto de grado tiene contrapartes tanto en multigrafos como en pseudografos y dígrafos.</p>
+<p>Para un vértice $v$ en un multigrafo o pseudografo $G$, el grado deg $v$ de $v$ en $G$ es el número de aristas de $G$ incidentes con $v$, donde hay una contribución de 2 para cada bucle en $v$ en un pseudografo. Para el pseudografo $G$ de la Figura 2.1.3,
+$\operatorname{deg} u_1=4, \operatorname{deg} u_2=6, \operatorname{deg} u_3=6, \operatorname{deg} u_4=4$.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/pseudo-multi.png"/>
+<p>Figura 2.1.3. Grados en un multigrafo y un digrafo.</p>
+</center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Para un vértice $v$ en un dígrafo $D$, el grado de salida  $\operatorname{od} v$ de $v$ es el número de vértices de $D$ hacia los que $v$ es adyacente, mientras que el grado de entrada  $\operatorname{id} v$ de $v$ es el número de vértices de $D$ desde los que $v$ es adyacente. Para el dígrafo $D$ de la Figura 2.1.3, $\operatorname{od} v_1=\operatorname{id} v_1=1, \operatorname{od} v_2=2, \operatorname{id} v_2=1, \operatorname{od} v_3=0, \operatorname{id} v_3=1 $</p>
 </div>
 </div>
 </div>
@@ -8296,7 +7742,7 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.3.-Clases-comunes-de-grafos">1.3. Clases comunes de grafos<a class="anchor-link" href="#1.3.-Clases-comunes-de-grafos">¶</a></h2>
+<h2 id="2.2.-Grafos-regulares">2.2. Grafos regulares<a class="anchor-link" href="#2.2.-Grafos-regulares">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8307,24 +7753,15 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Grafos-completos">Grafos completos<a class="anchor-link" href="#Grafos-completos">¶</a></h3>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un grafo $G$ es <strong>completo</strong> si cada dos vértices distintos de $G$ son adyacentes.</p>
+<p>Ya hemos mencionado que $0 \leq \delta(G) \leq \Delta(G) \leq n-1$ para cada grafo $G$ de orden $n$.</p>
+<p>Si $\delta(G)=\Delta(G)$, entonces los vértices de $G$ tienen el mismo grado y $G$ se llama <strong>grafo regular</strong>.</p>
 <ul>
-<li>Un grafo completo de orden $n$ se denota por $ K_n $.</li>
+<li>Si deg $v=r$ para cada vértice $v$ de $G$, donde $0 \leq r \leq n-1$, entonces $G$ es <strong>$r$-regular</strong> o <strong>regular de grado $r$</strong>.</li>
+<li>Los únicos grafos regulares de orden 4 o 5 se muestran en la Figura 2.2.1.<ul>
+<li>No existe ningún grafo 1-regular o 3-regular de orden 5, ya que ningún grafo contiene un número impar de vértices impares por el Corolario 2.3.</li>
 </ul>
-</blockquote>
-<p>$K_n$ tiene el tamaño máximo posible para un grafo con $n$ vértices. Como cada dos vértices distintos de $K_n$ están unidos por una arista, el número de pares de vértices en $K_n$ es $\binom{n}{2}$ y, por lo tanto, el tamaño de $K_n$ es $\binom{n}{2}=\frac{n(n-1)}{2}$.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -8336,7 +7773,8 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <center>
-<img alt="No description has been provided for this image" src="./fig/completos.png"/>
+<img alt="No description has been provided for this image" src="./fig/grafos-regulares.png"/>
+<p>Figura 2.2.1. Grafos regulares.</p>
 </center></div>
 </div>
 </div>
@@ -8347,36 +7785,11 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Complemento">Complemento<a class="anchor-link" href="#Complemento">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>El <strong>complemento</strong> $\bar{G}$ de un grafo $G$ es aquel grafo cuyo conjunto de vértices es $V(G)$ y tal que para cada par $u, v$ de vértices distintos de $G, u v$ es una arista de $\bar{G}$ si y solo si $u v$ no es una arista de $G$.</p>
-<ul>
-<li>Obsérvese que si $G$ es un grafo de orden $n$ y tamaño $m$, entonces $\bar{G}$ es un grafo de orden $n$ y tamaño $\binom{n}{2}-m$.</li>
-</ul>
-</blockquote>
-<p>El grafo $\bar{K}_n$ tiene entonces $n$ vértices y ninguna arista; se le llama <strong>grafo vacío</strong> de orden $n$. Por lo tanto, los grafos vacíos tienen conjuntos de aristas vacíos.</p>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Un grafo 3-regular también se denomina grafo cúbico.</p>
+<p>Los grafos $K_4, K_{3,3}$ y $Q_3$ son grafos cúbicos; sin embargo, el grafo cúbico más conocido puede muy bien ser el grafo de Petersen, que se muestra en la Figura 2.2.2.</p>
 <center>
-<img alt="No description has been provided for this image" src="./fig/complemento.png"/>
+<img alt="No description has been provided for this image" src="./fig/petersen.png"/>
+<p>Figura 2.2.2. El grafo de Petersen.</p>
 </center></div>
 </div>
 </div>
@@ -8387,8 +7800,20 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Por el Corolario 2.1.1, no hay grafos $r$-regulares de orden $n$ si $r$ y $n$ son ambos impares.</p>
+<p>Sin embargo, siempre que $0 \leq r \leq n-1$, no hay otras restricciones a la existencia de un grafo $r$-regular de orden $n$. En la siguiente demostración, consideraremos un grafo $G$ con el conjunto de vértices $V(G)=\left\{v_1, v_2, \ldots, v_n\right\}$ y realizaremos operaciones aritméticas sobre los subíndices de los vértices. Seguimos la práctica estándar de realizar operaciones aritméticas módulo $n$. Por ejemplo, si $n=6$ e $i=5$, entonces el vértice $v_{i+2}$ denota $v_1$.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <blockquote>
-<p><strong>Teorema 1.3.1.</strong> Si $G$ es un grafo desconexo, entonces $\bar{G}$ es conexo.</p>
+<p><strong>Teorema 2.2.1.</strong> Sean $r$ y $n$ enteros con $0 \leq r \leq n-1$. Existe un grafo regular de orden $n$ si y solo si al menos uno de $r$ y $n$ es par.</p>
 </blockquote>
 </div>
 </div>
@@ -8402,66 +7827,13 @@ $$</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><em>Demostración</em>.</p>
 <ul>
-<li>Como $G$ es desconexo, $G$ contiene dos o más componentes.</li>
-<li>Sean $u$ y $v$ dos vértices de $\bar{G}$. Demostramos que $u$ y $v$ son conexos en $\bar{G}$.</li>
-<li>Si $u$ y $v$ pertenecen a diferentes componentes de $G$, entonces $u$ y $v$ no son adyacentes en $G$ y, por lo tanto, $u$ y $v$ son adyacentes en $\bar{G}$. Por lo tanto, $\bar{G}$ contiene un camino $u-v$ de longitud 1.</li>
-<li>Supongamos a continuación que $u$ y $v$ pertenecen al mismo componente de $G$. Sea $w$ un vértice de $G$ que pertenece a un componente diferente de $G$. Entonces $u w, v w \notin E(G)$, lo que implica que $u w, v w \in E(\bar{G})$ y, por lo tanto, $(u, w, v)$ es un camino $u-v$ en $\bar{G}$.</li>
+<li>Como ya hemos mencionado, no existe un grafo $r$-regular de orden $n$ si $r$ y $n$ son ambos impares.</li>
+<li>Solo queda verificar la inversa. Por tanto, sean $r$ y $n$ enteros con $0 \leq r \leq n-1$ tales que al menos uno de $r$ y $n$ sea par.<ul>
+<li>Construimos un grafo $r$-regular $H_{r, n}$ de orden $n$. Sea $V\left(H_{r, n}\right)=\left\{v_1, v_2, \ldots, v_n\right\}$.</li>
+<li>Primero, supongamos que $r$ es par. Entonces $r=2 k \leq n-1$ para algún entero no negativo $k \leq(n-1) / 2$. Para cada $i(1 \leq i \leq n)$, unimos $v_i$ a $v_{i+1}, v_{i+2}, \ldots, v_{i+k}$ y a $v_i$ ${ }_{-1}, v_{i-2}, \ldots, v_{i-k}$. Si pensamos en ordenar los vértices $v_1, v_2, \ldots, v_n$ cíclicamente, entonces cada vértice $v_i$ es adyacente a los $k$ vértices que siguen inmediatamente a $v_i$ y a los $k$ vértices que preceden inmediatamente a $v_i$. Por lo tanto, $H_{r, n}$ es $r$-regular. Para $r=4$ y $n=10$, el grafo $H_{4,10}$ se muestra en la Figura 2.2.3(a).</li>
+<li>Ahora, supongamos que $r$ es impar. Entonces $n=2 l$ es par. Además, $r=2 k+1 \leq n-1$ para algún entero no negativo $k \leq(n-2) / 2$. Unimos $v_i$ a los $2 k$ vértices descritos anteriormente, así como a $v_{i+l}$. En este caso, pensamos nuevamente en ordenar los vértices $v_1, v_2, \ldots, v_n$ cíclicamente y unir cada vértice $v_i$ a los $k$ vértices inmediatamente posteriores, los $k$ vértices inmediatamente anteriores y el único vértice "opuesto" $v_i$. Por lo tanto, $H_{r, n}$ es $r$-regular. Para $r=5$ y $n=10$, el grafo $H_{5,10}$ se muestra en la Figura 2.2.3(b).</li>
 </ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Bipartici%C3%B3n">Bipartición<a class="anchor-link" href="#Bipartici%C3%B3n">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un grafo $G$ es un <strong>grafo bipartito</strong> si $V(G)$ se puede dividir en dos subconjuntos $U$ y $W$, llamados conjuntos partitos, de modo que cada arista de $G$ une un vértice de $U$ y un vértice de W.</p>
-</blockquote>
-<p>No siempre es fácil saber a simple vista si un grafo es bipartito. Por ejemplo, los grafos conexos $G_1$ y $G_2$ de la figura son bipartitos, ya que cada arista de $G_1$ une un vértice de $U_1=\left\{u_1, x_1, y_1\right\}$ y un vértice de $W_1=\left\{v_1, w_1\right\}$, mientras que cada arista de $G_2$ une un vértice de $U_2=\left\{u_2, w_2, y_2\right\}$ y un vértice de $W_2=$ $\left\{v_2, x_2, z_2\right\}$.</p>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/bipartita.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>No todos los grafos son bipartitos. Por ejemplo, considere el ciclo de 5 $C_5$ en la figura. Si $C_5$ fuera bipartito, entonces su conjunto de vértices podría dividirse en dos conjuntos $U$ y $W$ de modo que cada arista de $C_5$ uniera un vértice de $U$ y un vértice de $W$.</p>
-<ul>
-<li>El vértice $v_1$ debe pertenecer a $U$ o $W$, digamos $v_1 \in U$.</li>
-<li>Como $v_1 v_2$ es una arista de $C_5$, se deduce que $v_2 \in W$.</li>
-<li>Como $v_2 v_3$ es una arista de $C_5$, se sigue que $v_3 \in U$.</li>
-<li>De manera similar, $v_4 \in W$ y $v_5 \in U$.</li>
-<li>Sin embargo, $v_1, v_5 \in U$ y $v_1 v_5$ son una arista de $C_5$. Esto es una contradicción.</li>
-<li>Por lo tanto, $C_5$ no es bipartito.</li>
+</li>
 </ul>
 </div>
 </div>
@@ -8474,22 +7846,24 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <center>
-<img alt="No description has been provided for this image" src="./fig/C_5.png"/>
+<img alt="No description has been provided for this image" src="./fig/4-5-regular.png"/>
+<p>Figura 2.2.3. Un grafo 4-regular y un 5-regular, ambos de orden 10.</p>
 </center></div>
 </div>
 </div>
-</div><div class="fragment">
+</div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>De hecho, ningún ciclo impar es bipartito. De hecho, cualquier grafo que contenga un ciclo impar no es bipartito. La inversa también es cierta, lo que puede resultar sorprendente.</p>
+<p>Los grafos $H_{r, n}$ descritos anteriormente se denominan grafos de Harary, en honor a Frank Harary.</p>
+<p>Si $H$ es un grafo $r$-regular, entonces $H$ no puede contener ningún grafo $G$ como subgrafo si $\Delta(G)&gt;r$. Por otro lado, si $G$ es un grafo con $\Delta(G) \leq r$ para algún entero $r$, entonces $G$ es un subgrafo (de hecho, un subgrafo inducido) de algún grafo $r$-regular $H$.</p>
 </div>
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8497,7 +7871,7 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <blockquote>
-<p><strong>Teorema 1.3.2.</strong> Un grafo no trivial $G$ es un grafo bipartito si y solo si $G$ no contiene ciclos impares.</p>
+<p><strong>Teorema 2.2.2.</strong> Para cada grafo $G$ y cada entero $r \geq \Delta(G)$, existe un grafo $r$-regular $H$ que contiene a $G$ como subgrafo inducido.</p>
 </blockquote>
 </div>
 </div>
@@ -8510,29 +7884,16 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><em>Demostración</em>.</p>
-<p>Ya hemos visto que si un grafo contiene un ciclo impar, entonces es no bipartito. Ahora, sea $G$ un grafo no trivial que no tiene ciclos impares, demostremos entonces que $G$ es bipartito.</p>
 <ul>
-<li><p>Sea $u$ cualquier vértice de $G$, sea $U$ formado por todos los vértices de $G$ cuya distancia a $u$ es par y sea $W$ formado por todos los vértices cuya distancia a $u$ es impar. Por lo tanto, $\{U, W\}$ es una partición de $V(G)$. Como $d(u, u)=0$, se sigue que $u \in U$. Afirmamos que cada arista de $G$ une un vértice de $U$ y un vértice de $W$.</p>
-</li>
-<li><p>Supongamos, que existen dos vértices adyacentes en $U$ o dos vértices adyacentes en $W$. Como estas dos situaciones son similares, supondremos que hay vértices $v$ y $w$ en $W$ tales que $v w \in E(G)$. Como $d(u, v)$ y $d(u, w )$ son impares, $d(u, v)=2 s+1$ y $d(u, w)=2 t+1$ para enteros no negativos $s$ y $t$. Sea $P^{\prime}=\left(u=v_0, v_1, \ldots, v_{2 s+1}=v\right)$ una geodésica $u-v$ y sea $P^{\prime \prime}=\left(u=w_0\right.$, $w_1, \ldots, w_{2 t+1}=w$ ) una geodésica $u-w$ en $G$.</p>
-</li>
+<li>Si $G$ es $r$-regular, entonces hacemos que $H=G$.</li>
+<li>Si $G$ no es un grafo $r$-regular.<ul>
+<li>Supongamos que $G$ tiene orden $n$ y $V(G)=\left\{v_1, v_2, \ldots, v_n\right\}$.</li>
+<li>Sea $G^{\prime}$ otra copia de $G$ con $V\left(G^{\prime}\right)=\left\{v_1^{\prime}, v_2^{\prime}, \ldots, v_n^{\prime}\right\}$, donde cada vértice $v_i^{\prime}$ en $G^{\prime}$ corresponde a $v_i$ en $G$ para $1 \leq i \leq n$.</li>
+<li>Ahora construimos un grafo $G_1$ a partir de $G$ y $G^{\prime}$ sumando las aristas $v_i v_i^{\prime}$ para todos los vértices $v_i(1 \leq i \leq n)$ de $G$ para los cuales deg $v_i \leq r$.</li>
+<li>Entonces $G$ es un subgrafo inducido de $G_1$ y $\delta\left(G_1\right)=\delta(G)+1$.</li>
+<li>Si $G_1$ es $r$-regular, entonces hacemos $H=G_1$.</li>
+<li>Si no, entonces continuamos este procedimiento hasta que llegamos a un grafo $r$-regular $G_k$, donde $k=r-\delta(G)$. El grafo $G_k$ es el grafo deseado $H$.</li>
 </ul>
-<blockquote>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li><p>Ciertamente, $P^{\prime}$ y $P^{\prime \prime}$ tienen en común su vértice inicial $u$ pero pueden tener otros vértices en común también. Entre los vértices que $P^{\prime}$ y $P^{\prime \prime}$ tienen en común, sea $x$ el último vértice. Quizás $x$ $=u$. En cualquier caso, $x=v_i$ para algún entero $i \geq 0$. Por lo tanto $d\left(u, v_i\right)=i$. Como $x$ está en $P^{\prime \prime}$ y $w_i$ es el único vértice de $P^{\prime \prime}$ cuya distancia a $u$ es $i$, se deduce que $x=w_i$. Por lo tanto $x=v_i=w_i$.</p>
-</li>
-<li><p>Sin embargo, $C=\left(v_i, v_{i+1}, \ldots, v_{2 s+1}, w_{2 t+1}, w_{2 t}, \ldots, w_i=v_i\right)$ es un ciclo de longitud $ [(2 s+1)-i]+[(2 t+1)-i]+1=2 s+2 t-2 i+3=2(s+t-i+1)+1 $ y por lo tanto $C$ es un ciclo impar, lo cual es una contradicción.</p>
 </li>
 </ul>
 </div>
@@ -8545,13 +7906,17 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Si $G$ es un grafo bipartito, $V(G)$ se puede dividir en dos subconjuntos $U$ y $W$, esto no significa que cada vértice de $U$ sea adyacente a cada vértice de $W$. Si esto sucede, entonces llamamos a $G$ un <strong>grafo bipartito completo</strong>.</p>
-</blockquote>
+<p>Para ilustrar la construcción descrita en el Teorema 2.2.2, considere el grafo $G$ de la Figura 2.2.4, donde $\Delta(G)=4$ y $\delta(G)=2$.</p>
 <ul>
-<li><p>Un grafo bipartito completo con $s = |U|$ y $t = |W|$ se denota por $K_{s, t}$ o $K_{t, s}$.</p>
+<li><p>Buscamos un grafo 4-regular $H$ que contenga a $G$ como subgrafo inducido.</p>
+<ul>
+<li><p>Primero, construimos un grafo $G_1$ a partir de dos copias de $G$ uniendo todos los pares de vértices correspondientes en estas copias cuyos grados sean menores que 4.</p>
 </li>
-<li><p>Si $s=1$ o $t=1$, entonces $K_{s, t}$ es una <strong>estrella</strong>.</p>
+<li><p>Entonces $\Delta\left(G_1\right)=4, \delta\left(G_1\right)=3$ y $G$ es un subgrafo inducido de $G_1$. Luego construimos $H$ a partir de dos copias de $G_1$ uniendo todos los pares de vértices correspondientes en estas copias cuyos grados sean 3 .</p>
+</li>
+<li><p>Entonces $H$ es 4-regular y $G$ es un subgrafo inducido de $H$.</p>
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -8565,145 +7930,8 @@ $$</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <center>
-<img alt="No description has been provided for this image" src="./fig/bip_completos.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="k-partici%C3%B3n">k-partición<a class="anchor-link" href="#k-partici%C3%B3n">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Los grafos bipartitos pertenecen a una clase más general de grafos.</p>
-<blockquote>
-<p>Un grafo $G$ es un <strong>grafo $k$-partito</strong> si $V(G)$ se puede dividir en $k$ subconjuntos $V_1, V_2, \ldots, V_k$ (de nuevo llamados conjuntos partitos) de manera que si $u v$ es una arista de $G$, entonces $u$ y $v$ pertenecen a diferentes conjuntos partitos.</p>
-<ul>
-<li>Si, además, cada par de vértices en diferentes conjuntos partitos están unidos por una arista, entonces $G$ es un <strong>grafo $k$-partito completo</strong>.<ul>
-<li>Si $\left|V_i\right|=n_i$ para $1 \leq i \leq k$, entonces denotamos este grafo $k$-partito completo por $K_{n 1, n 2, \ldots, n k}$.</li>
-<li>Los grafos $k$-partitos completos también se conocen como grafos multipartitos completos.</li>
-<li>Si $n_i=1$ para cada $i(1 \leq i \leq k)$, entonces $K_{n 1, n 2, \ldots, n k}$ es el grafo completo $K_k$.</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/k-partidos.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Unir-grafos">Unir grafos<a class="anchor-link" href="#Unir-grafos">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Existen varias maneras de producir un nuevo grafo a partir de un par de grafos dado.</p>
-<blockquote>
-<p>Para dos grafos disjuntos en vértices $G$ y $H$, ya hemos mencionado la <strong>unión</strong> $G$ $\cup H$ de $G$ y $H$ como ese grafo (desconectado) con un conjunto de vértices $V(G) \cup V(H)$ y un conjunto de aristas $E(G) \cup E(H)$.</p>
-</blockquote>
-<blockquote>
-<p>La <strong>conjunción</strong> $G+H$ consta de $G \cup H$ y todas las aristas que unen un vértice de $G$ y un vértice de $H$.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/join.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Para dos grafos $G$ y $H$, el <strong>producto cartesiano</strong> $G \times H$ tiene el conjunto de vértices $V(G \times$ $H)=V(G) \times V(H)$, es decir, cada vértice de $G \times H$ es un par ordenado $(u, v)$, donde $u \in V(G)$ y $v \in V(H)$.  El producto cartesiano de $G$ y $H$ también se denota a menudo por $G$ $\square H$. Dos vértices distintos $(u, v)$ y $(x, y)$ son adyacentes en $G \times H$ si (1) $u=x$ y $v y \in E(H)$ o (2) $v=y$ y $u x \in E(G)$.</p>
-</blockquote>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/cartesiano.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>Nótese que $K_2 \times K_2$ es el 4-ciclo $C_4$.</li>
-<li>El grafo $C_4 \times K_2$ se suele denotar por $Q_3$ y se llama 3-cubo.</li>
-<li>De manera general, definimos $Q_1$ como $K_2$ y para $n \geq 2$, definimos $Q_n$ como $Q_{n-1} \times K_2$.</li>
-<li>Los grafos $Q_n$ se denominan entonces <strong>$n$-cubos</strong> o <strong>hipercubos</strong>.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/n-cubos.png"/>
+<img alt="No description has been provided for this image" src="./fig/4-regular.png"/>
+<p>Figura 2.2.4. Un grafo 4-regular que contiene a $G$ como un subgrafo inducido.</p>
 </center></div>
 </div>
 </div>
@@ -8714,135 +7942,8 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.4.-Multigrafos-y-digrafos">1.4. Multigrafos y digrafos<a class="anchor-link" href="#1.4.-Multigrafos-y-digrafos">¶</a></h2>
+<h2 id="2.3.-Secuencias-de-grados">2.3. Secuencias de grados<a class="anchor-link" href="#2.3.-Secuencias-de-grados">¶</a></h2>
 </div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Multigrafo">Multigrafo<a class="anchor-link" href="#Multigrafo">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un <strong>multigrafo</strong> $M$ consiste en un conjunto finito no vacío $V$ de vértices y un conjunto $E$ de aristas, donde cada dos vértices de $M$ están unidos por un número finito de aristas (posiblemente cero).</p>
-<ul>
-<li>Si dos o más aristas unen el mismo par de vértices (distintos), entonces estas aristas se llaman aristas paralelas.</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>En un <strong>pseudografo</strong>, no solo se permiten aristas paralelas, sino que también se permite que una arista una un vértice consigo misma.</p>
-<ul>
-<li>Tal arista se llama <strong>bucle</strong>. Si un bucle $e$ une un vértice $v$ consigo mismo, entonces se dice que $e$ es un bucle en $v$.</li>
-<li>Puede haber cualquier número finito de bucles en el mismo vértice en un pseudografo.</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En la figura, $M_1$ y $M_2$ son multigrafos, $M_3$ es un pseudografo y $M_4$ es un grafo. De hecho, $M_4$ es un multigrafo y los cuatro son pseudografos.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/multigrafos.png"/>
-</center></div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Digrafo">Digrafo<a class="anchor-link" href="#Digrafo">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="fragment">
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<blockquote>
-<p>Un <strong>dígrafo</strong> (o <strong>grafo dirigido</strong>) $D$ es un conjunto finito no vacío $V$ de objetos llamados vértices junto con un conjunto $E$ de pares ordenados de vértices distintos.</p>
-<ul>
-<li>Los elementos de $E$ se llaman <strong>aristas dirigidas</strong> o <strong>arcos</strong>.<ul>
-<li>Si $(u, v)$ es una arista dirigida, entonces lo indicamos en un diagrama que representa a $D$ dibujando un segmento de línea o curva dirigida desde $u$ hasta $v$.</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-</div>
-</div>
-</div>
-</div></div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>Entonces se dice que $u$ es adyacente a $v$ y $v$ es adyacente a $u$. También se dice que los vértices $u$ y $v$ son incidentes con la arista dirigida $(u, v)$.</li>
-<li>Los arcos $(u, v)$ y $(v, u)$ pueden estar presentes en algún grafo dirigido.</li>
-<li>Si, en la definición de dígrafo, para cada par $u, v$ de vértices distintos, como máximo uno de $(u, v)$ y $(v, u)$ es una arista dirigida, entonces el dígrafo resultante es un <strong>grafo orientado</strong>.</li>
-<li>De este modo, un grafo orientado $D$ se obtiene asignando una dirección a cada arista de algún grafo $G$.</li>
-<li>El dígrafo $D$ también se denomina orientación de $G$.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>La figura muestra dos dígrafos $D_1$ y $D_2$, donde $D_2$ es un grafo orientado pero $D_1$ no lo es.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<center>
-<img alt="No description has been provided for this image" src="./fig/digrafos.png"/>
-</center></div>
 </div>
 </div>
 </div></section></section><section><section>
@@ -8852,7 +7953,39 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Fin-de-la-unidad-1">Fin de la unidad 1<a class="anchor-link" href="#Fin-de-la-unidad-1">¶</a></h1>
+<h2 id="2.4.-Excursiones">2.4. Excursiones<a class="anchor-link" href="#2.4.-Excursiones">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="2.5.-Exploraciones">2.5. Exploraciones<a class="anchor-link" href="#2.5.-Exploraciones">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Fin-de-la-Unidad-2">Fin de la Unidad 2<a class="anchor-link" href="#Fin-de-la-Unidad-2">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
