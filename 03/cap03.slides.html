@@ -7732,6 +7732,195 @@ Figura 3.8. Grafos autocomplementarios.
 </div>
 </div>
 </div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Si un grafo $G_1$ es isomorfo a un grafo $G_2$ si existe un isomorfismo $\phi: V\left(G_1\right) \rightarrow V\left(G_2\right)$,</p>
+<ul>
+<li><p>el isomorfismo produce una relación en cualquier conjunto de grafos, es decir, un grafo $G_1$ está relacionado con un grafo $G_2$ si $G_1$ es isomorfo a $G_2$.</p>
+</li>
+<li><p>Esta relación es una relación de equivalencia.</p>
+<ul>
+<li>el isomorfismo es reflexivo (cada grafo es isomorfo a sí mismo),</li>
+<li>el isomorfismo es simétrico (si $G_1$ es isomorfo a $G_2$, entonces $G_2$ es isomorfo a $G_1$) y</li>
+<li>el isomorfismo es transitivo (si $G_1$ es isomorfo a $G_2$ y $G_2$ es isomorfo a $G_3$, entonces $G_1$ es isomorfo a $G_3$).</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Teorema 3.6.</strong> El isomorfismo es una relación de equivalencia en el conjunto de todos los grafos.</p>
+</blockquote>
+<p><em>Demostración.</em></p>
+<p>El isomorfismo es reflexivo, es decir, todo grafo es isomorfo a sí mismo.</p>
+<ul>
+<li>Sea $G$ un grafo y consideremos la función identidad $\epsilon$ : $V(G) \rightarrow V(G)$ definida por $\epsilon(v)=v$ para cada vértice $v$ de $G$.</li>
+<li>dos vértices $u$ y $v$ de $G$ son adyacentes si y solo si $\epsilon(u)=u$ y $\epsilon$ $(v)=v$ son adyacentes.<ul>
+<li>Por lo tanto, $\epsilon$ es un isomorfismo y, por lo tanto, $G$ es isomorfo a $G$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El isomorfismo es simétrico.</p>
+<ul>
+<li>Sean $G_1$ y $G_2$ grafos y supongamos que $G_1$ es isomorfo a $G_2$.<ul>
+<li>Por lo tanto, existe un isomorfismo $\phi$ : $V\left(G_1\right) \rightarrow V\left(G_2\right)$.</li>
+</ul>
+</li>
+<li>Como $\phi$ es una función biyectiva,<ul>
+<li>su inversa $\phi^{-1}: V\left(G_2\right) \rightarrow V\left(G_1\right)$ existe y es una función biyectiva.</li>
+</ul>
+</li>
+<li>Sean $u_2$ y $v_2$ dos vértices cualesquiera en $G_2$ y supongamos que $\phi^{-1}\left(u_2\right)=u_1$ y $\phi^{-1}\left(v_2\right)=v_1$.<ul>
+<li>Por lo tanto $\phi\left(u_1\right)=u_2$ y $\phi\left(v_1\right)=v_2$.</li>
+<li>Si $u_2$ y $v_2$ son vértices adyacentes en $G_2$, entonces $u_1$ y $v_1$ son vértices adyacentes en $G_1$ ya que $\phi$ es un isomorfismo.</li>
+</ul>
+</li>
+<li>Por otra parte, si $u_2$ y $v_2$ no son adyacentes, entonces $u_1$ y $v_1$ no son adyacentes.<ul>
+<li>Por lo tanto, $u_2$ y $v_2$ son adyacentes en $G_2$ si y solo si $\phi^{-1}\left(u_2\right)$ y $\phi^{-1}\left(v_2\right)$ son adyacentes en $G_1$. Por lo tanto, $\phi^{-1}$ es un isomorfismo y, por lo tanto, $G_2$ es isomorfo a $G_1$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El isomorfismo es transitivo.</p>
+<ul>
+<li>Sean los grafos $G_1, G_2$ y $G_3$, supongamos que $G_1$ es isomorfo a $G_2$ y $G_2$ es isomorfo a $G_3$.<ul>
+<li>Por lo tanto, existen isomorfismos $\alpha: V\left(G_1\right) \rightarrow V\left(G_2\right)$ y $\beta: V\left(G_2\right) \rightarrow V\left(G_3\right)$.</li>
+</ul>
+</li>
+<li>Considérese la composición $\beta \circ \alpha: V\left(G_1\right) \rightarrow V\left(G_3\right)$.</li>
+<li>Como $\alpha$ y $\beta$ son biyectivas, también lo es $\beta \circ \alpha$.</li>
+<li>Como $\alpha$ es un isomorfismo, los vértices $u_1$ y $v_1$ de $G_1$ son adyacentes si y solo si $\alpha$ $\left(u_1\right)$ y $\alpha\left(v_1\right)$ son adyacentes en $G_2$.</li>
+<li>Como $\beta$ es un isomorfismo, $\alpha\left(u_1\right)$ y $\alpha\left(\beta_1\right)$ son adyacentes en $G_2$ si y solo si $\beta\left(\alpha\left(u_1\right)\right)$ y $\beta\left(\alpha\left(v_1\right)\right)$ son adyacentes en $G_3$.<ul>
+<li>Por lo tanto, $u_1$ y $v_1$ son adyacentes en $G_1$ si y solo si $(\beta \circ \alpha)\left(u_1\right)$ y $(\beta \circ \alpha)\left(v_1\right)$ son adyacentes en $G_3$ y por lo tanto $\beta \circ \alpha$ es un isomorfismo.</li>
+<li>Por lo tanto, $G_1$ es isomorfo a $G_3$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El hecho de que el isomorfismo es una relación de equivalencia en un conjunto de grafos produce una partición de este conjunto en clases de equivalencia (subconjuntos) llamadas <strong>clases de isomorfismo</strong>.</p>
+<ul>
+<li>Cada par de grafos en la misma clase de isomorfismo son isomorfos y</li>
+<li>cada par grafos en diferentes clases de isomorfismo no son isomorfos.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Supongamos que se nos piden todos los grafos con sucesión de grados $s: 2,2,2,2,2,2,2,2,2$. Lo que estamos buscando claramente aquí son grafos no isomorfos. La respuesta a esta pregunta se da en la Figura 3.16.</p>
+<center>
+<img alt="No description has been provided for this image" src="./fig/grafo222222222.png"/>
+<center>
+Figura 3.16. Todos los grafos con secuencia gráfica s: 2,2,2,2,2,2,2,2,2.
+
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Consideremos los grafos $H$ y $G$ de la Figura 3.17.</p>
+<ul>
+<li><p>Definimos un grafo $H$ como un subgrafo de un grafo $G$, escrito $H \subseteq G$, si $V(H) \subseteq V(G)$ y $E(H) \subseteq E(G)$.</p>
+<ul>
+<li>esta es la definición si los grafos $H$ y $G$ están etiquetados (es decir, si se han especificado los conjuntos de vértices de $H$ y $G$).</li>
+</ul>
+</li>
+<li><p>Los grafos $H$ y $G$ de la Figura 3.17 no están etiquetados. Para este tipo de grafos $H$ y $G$,</p>
+<ul>
+<li>$H$ es <strong>isomorfo a un subgrafo</strong> de $G$ si para cualquier etiquetado de los vértices de $H$ y $G$, el grafo etiquetado $H$ es isomorfo a un subgrafo del grafo etiquetado $G$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/sub_isomorfo.png"/>
+<center>
+Figura 3.17. Isomorfismo en subgrafos.
+
+</center></center></div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="3.3.-Grafos-y-grupos">3.3. Grafos y grupos<a class="anchor-link" href="#3.3.-Grafos-y-grupos">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+</div>
+</div>
+</div>
 </div></section></section>
 </div>
 </div>
