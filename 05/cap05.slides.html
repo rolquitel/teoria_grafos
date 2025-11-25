@@ -7451,7 +7451,244 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.1.-Vertices-de-corte">5.1. Vertices de corte<a class="anchor-link" href="#5.1.-Vertices-de-corte">¶</a></h2>
+<h2 id="5.1.-V%C3%A9rtices-de-corte">5.1. Vértices de corte<a class="anchor-link" href="#5.1.-V%C3%A9rtices-de-corte">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=799b7875">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Una de las propiedades más importantes que puede tener un grafo es la conectividad.</li>
+<li>La figura 5.1 muestra siete grafos de orden 7.<ul>
+<li>Todos estos grafos son conexos. Sin embargo, algunos parecen ser «más conexos» que otros.</li>
+<li>En este capítulo se verán de medidas de la conectividad de un grafo.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=60fb171c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/connected_graphs.png"/>
+<center>
+Figura 5.1. Grafos conectados
+
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf239d59">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><p>Algunos grafos están tan poco conectados que la eliminación de una sola arista da como resultado un grafo disconexo.</p>
+<ul>
+<li>una arista con esta propiedad es un puente.</li>
+<li>El grafo $G_2$ tiene un puente.</li>
+<li>También lo tiene $G_1$. De hecho, cada arista de $G_1$ es un puente, ya que $G_1$ es un árbol.</li>
+</ul>
+</li>
+<li><p>Ahora trataremos con grafos conectados que contienen una arista cuya eliminación da como resultado un grafo disconexo a grafos conectados que contienen un vértice cuya eliminación da como resultado un grafo disconexo.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d112230a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Recordemos que si $v$ es un vértice de un grafo no trivial $G$, entonces $G-v$ se refiere al subgrafo (inducido) de $G$ cuyo conjunto de vértices consta de todos los vértices de $G$ excepto $v$ y cuyo conjunto de aristas consta de todas las aristas de $G$ excepto las incidentes con $v$.</li>
+<li>Este concepto se ilustra en la Figura 5.2.</li>
+<li>De hecho, si $U$ es un subconjunto propio del conjunto de vértices de $G$, entonces $G-U$ es el subgrafo (inducido) de $G$ cuyo conjunto de vértices es $V(G)-U$ y cuyo conjunto de aristas consta de todas las aristas de $G$ que unen dos vértices en $V(G)$ - $U$.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=63b7658f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/grafo_G_y_G-v.png"/>
+<center>
+Figura 5.2. Grafos $G$ y $G-v$
+</center>
+</center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bedc219f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Un vértice $v$ en un grafo conexo $G$ es un vértice de corte de $G$ si $G-v$ es disconexo.</li>
+<li>De forma más general, un vértice $v$ es un vértice de corte en un grafo $G$ si $v$ es un vértice de corte de una componente de $G$.<ul>
+<li>En el grafo $G$ de la Figura 5.2, $v$ y $x$ son los únicos vértices de corte.</li>
+<li>En el grafo $G-v$, el vértice $x$ no es un vértice de corte; sin embargo, $s$ sí lo es en $G-v$.</li>
+<li>Por consiguiente, para $U=\{s, v\}$, el grafo $G-U$ es disconexo.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3572df82">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Observe que el grafo $G$ de la Figura 5.2 no solo contiene el vértice de corte $v$, sino también tres puentes, dos de los cuales son incidentes con $v$.</li>
+<li>Dado que un vértice de corte en un grafo $G$ es un vértice de corte de una componente de $G$, nos limitaremos a grafos conexos.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8c350a0f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Teorema 5.1.</strong> <em>Sea $v$ un vértice incidente con un puente en un grafo conexo $G$. Entonces $v$ es un vértice de corte de $G$ si y solo si $\operatorname{deg} v \geq 2$.</em></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0bea049a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Demostración.</em></p>
+<ul>
+<li>Supongamos que $u v$ es un puente de $G$. Entonces, $\operatorname{deg} v \geq 1$.<ul>
+<li>Supongamos que $\operatorname{deg} v=$ 1$. Dado que $v$ es un vértice extremo de $G$, el grafo $G-v$ es conexo y, por lo tanto, $v$ no es un vértice de corte de $G$.</li>
+<li>Supongamos que $\operatorname{deg} v \geq 2$. Entonces existe un vértice $w$ distinto de $u$ adyacente a $v$.<ul>
+<li>Supongamos que $v$ no es un vértice de corte. Por lo tanto, $G-v$ es conexo y, en consecuencia, existe un camino $P$ $u-w$ en $G-v$. Sin embargo, $P$, junto con $v$ y las dos aristas $u v$ y $v w$, forman un ciclo que contiene el puente $u v$. Esto contradice el Teorema 4.1.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=35e58f4f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Una consecuencia inmediata del Teorema 5.1 es que si un vértice $v$ de un árbol no trivial $T$ no es un vértice final de $T$, entonces $v$ es un vértice de corte de $T$.</li>
+</ul>
+<blockquote>
+<p><strong>Corolario 5.2.</strong> <em>Sea $G$ un grafo conexo de orden 3 o superior. Si $G$ contiene un puente, entonces $G$ contiene un vértice de corte.</em></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd008b84">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Teorema 5.3.</strong> <em>Sea $v$ un vértice de corte en un grafo conexo $G$ y sean $u$ y $w$ vértices en componentes distintas de $G-v$. Entonces $v$ se encuentra en todo camino $u-w$ en $G$.</em></p>
+</blockquote>
+<p><em>Demostración.</em></p>
+<ul>
+<li>Si $G$ contiene dos vértices $u$ y $w$ tales que todo camino $u-w$ en $G$ contiene a $v$, entonces no existe ningún camino $u-w$ en $G-v$. Por lo tanto, $u$ y $w$ no están conectados en $G-v$, y en consecuencia, $G-v$ es disconexo. Por lo tanto, $v$ es un vértice de corte de $G$.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2216be17">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Corolario 5.4.</strong> <em>Un vértice $v$ de un grafo conexo $G$ es un vértice de corte de $G$ si y solo si existen vértices $u$ y $w$ distintos de $v$ tales que $v$ se encuentra en todo camino $u$-w$ de $G$.</em></p>
+</blockquote>
+<p>Por el Corolario 5.4, si $v$ es un vértice en un grafo conexo $G$ que no es un vértice de corte de $G$, entonces para cada par de vértices $u$ y $w$ de $G$ distintos de $v$, existe un camino $u-w$ que no contiene a $v$.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f8c5ddf9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Teorema 5.5.</strong> <em>Sea $G$ un grafo conexo no trivial y sea $u \in V(G)$. Si $v$ es el vértice más alejado de $u$ en $G$, entonces $v$ no es un vértice de corte de $G$.</em></p>
+</blockquote>
+<p><em>Demostración.</em></p>
+<ul>
+<li>Supongamos, por el contrario, que $v$ es un vértice de corte de $G$.</li>
+<li>Sea $w$ un vértice perteneciente a una componente de $G-v$ que no contiene a $u$.<ul>
+<li>Dado que todo camino $u-w$ contiene a $v$, se deduce que $d(u, w)&gt;d(u, v)$, lo cual es una contradicción.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=09ec0b17">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Corolario 5.6.</strong> <em>Todo grafo conexo no trivial contiene al menos dos vértices que no son vértices de corte.</em></p>
+</blockquote>
+<p><em>Demostración.</em></p>
+<ul>
+<li>Sean $u$ y $v$ vértices de un grafo conexo no trivial $G$ tales que $d(u$, $v)=\operatorname{diam}(G)$.</li>
+<li>Dado que $u$ y $v$ son los vértices más alejados entre sí, se deduce del Teorema 5.5 que ni $u$ ni $v$ son vértices de corte de $G$.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7466,6 +7703,221 @@ main {
 </div>
 </div>
 </div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7b013051">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Un grafo conexo no trivial sin vértices de corte se denomina grafo no separable.</li>
+</ul>
+<blockquote>
+<p><strong>Teorema 5.7.</strong> <em>Un grafo de orden al menos 3 es no separable si y solo si cada par de vértices pertenece a un ciclo común.</em></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3756a96c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Demostración.</em></p>
+<ul>
+<li>Sea que $G$ un grafo de orden al menos 3 tal que cada par de vértices de $G$ se encuentra en un ciclo común.</li>
+<li>Supongamos que $G$ no es no separable.<ul>
+<li>Dado que cada par de vértices se encuentra en un ciclo común, cada par de vértices está conectado y, por lo tanto, $G$ es conectado.</li>
+<li>Como $G$ no es no separable, $G$ debe contener un vértice de corte, digamos $v$.<ul>
+<li>Sean $u$ y $w$ dos vértices que pertenecen a componentes diferentes de $G-v$.</li>
+<li>Por hipótesis, $u$ y $w$ se encuentran en un ciclo común $C$ en $G$.<ul>
+<li>Sin embargo, $C$ determina dos caminos distintos $u-w$ en $G$, al menos uno de los cuales no contiene a $v$, lo cual contradice el Teorema 5.3.</li>
+<li>Por lo tanto, $G$ no contiene vértices de corte y, por consiguiente, $G$ es no separable.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=adc95901">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Sea $G$ un grafo no separable de orden al menos 3.<ul>
+<li>Dado que $G$ no contiene vértices de corte, se deduce del Corolario 5.2 que $G$ no contiene puentes.</li>
+</ul>
+</li>
+<li>Supongamos que existen pares de vértices de $G$ que no se encuentran en un ciclo común. Entre todos estos pares, sea $u, v$ un par para el cual $d(u$, $v)$ es mínimo.<ul>
+<li>Si $d(u, v)=1$, entonces $u v \in E(G)$ y $u v$ deben estar en un ciclo, porque no hay puentes. Por lo tanto, $d(u, v)=k \geq 2$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=77c736d4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><em>(cont.)</em><ul>
+<li>Sea $P=\left(u=v_0, v_1, \ldots, v_{k-1}, v_k=v\right)$ un camino $u-v$ de longitud $k$ en $G$.<ul>
+<li>Dado que $d\left(u, v_k-1\right)=k-1&lt;k$, existe un ciclo $C$ que contiene a $u$ y $v_{k-1}$.</li>
+<li>Por hipótesis, $v$ no pertenece a $C$.<ul>
+<li>Puesto que $v_{k-1}$ no es un vértice de corte de $G$ y $u$ y $v$ son distintos de $v_k -1$, se deduce que existe un camino $Q$ $v-u$ que no contiene a $v_{k-1}$.</li>
+<li>Dado que $u$ pertenece a $C$, existe un primer vértice $x$ de $Q$ que también pertenece a $C$.</li>
+<li>Sea $Q'$ el subcamino $v-x$ de $Q$ (véase la figura 5.3) y sea $P'$ un camino $v_{k-1}-x$ en $C$ que contiene a $u$.</li>
+<li>Sin embargo, el ciclo $C^{\prime}$ producido al proceder desde $v$ a su vecino $v_{k-1}$, a lo largo de $P^{\prime}$ hasta $x$ y luego a lo largo de $Q^{\prime}$ hasta $v$ contiene tanto a $u$ como a $v$, una contradicción.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=50875c0b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/5-3.png"/>
+<center>
+Figura 5.3: El ciclo $C$ y los caminos $P^{\prime}, Q^{\prime}$ en la demostración del Teorema 5.7.
+
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=472c8df5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Si un grafo conexo no trivial no es no separable, entonces debe contener vértices de corte</li>
+<li>Un subgrafo no separable maximal de un grafo $G$ se denomina <strong>bloque</strong> de $G$.<ul>
+<li>Es decir, un bloque de $G$ es un subgrafo no separable de un grafo $G$ que no es un subgrafo propio de ningún otro subgrafo no separable en $G$.</li>
+<li>Cada bloque de $G$ es un subgrafo inducido de $G$. Por lo tanto, si $G$ es no separable, entonces $G$ tiene un solo bloque: el propio grafo $G$.</li>
+</ul>
+</li>
+<li>Si $G$ es conexo y tiene vértices de corte, entonces $G$ tiene dos o más bloques.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=57db8271">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>La figura 5.4 muestra un grafo conexo $G$ con dos vértices de corte $u$ y $v$ y cuatro bloques $B_1, B_2, B_3$ y $B_4$. Así como un grafo disconexo tiene subgrafos conexos especiales llamados componentes, un grafo conexo con vértices de corte contiene subgrafos especiales no separables llamados bloques.</p>
+<center>
+<img alt="No description has been provided for this image" src="./fig/5-4.png"/>
+<center>
+Figura 5.4: Un grafo conexo y sus bloques
+
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0d7b44b4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Teorema 5.8.</strong> Sea $R$ la relación definida en el conjunto de aristas de un grafo conexo no trivial $G$ mediante $e R f$, donde $e, f \in E(G)$, si $e=f$ o si $e$ y $f$ pertenecen a un ciclo común de $G$. Entonces, $R$ es una relación de equivalencia.</p>
+</blockquote>
+<p><em>Demostración.</em></p>
+<ul>
+<li>Es inmediato que $R$ es reflexiva y simétrica, por lo que solo necesitamos demostrar que $R$ es transitiva.</li>
+<li>Sean $e, f, g \in E(G)$ tales que $e R f$ y $f R g$. Si $e=f$ o $f=g$, entonces $e R g$. Por lo tanto, podemos suponer que $e$ y $f$ pertenecen a un ciclo $C$ y que $f$ y $g$ pertenecen a un ciclo $C'$. Si $e$ pertenece a $C'$ o $g$ pertenece a $C$, entonces $e R g$. Así pues, podemos suponer que esto no ocurre.</li>
+<li>Sea $e=u v$ y supongamos que $P$ es el camino $u-v$ en $C$ que no contiene a $e$. Sea $x$ el primer vértice de $P$ perteneciente a $C'$ e $y$ el último vértice de $P$ perteneciente a $C'$. Además, sea $P'$ el camino $x-y$ en $C'$ que contiene a $g$ y sea $P''$ el camino $x-y$ en $C$ que contiene a $e$. Entonces, $P'$ y $P''$ generan un ciclo $C''$ que contiene tanto a $e$ como a $g$. Por lo tanto, $e \subseteq g$.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0b0b309f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Corolario 5.9.</strong> Dos bloques distintos $B_1$ y $B_2$ en un grafo conexo no trivial G tienen las siguientes propiedades:</p>
+<ul>
+<li>Los bloques $B_1$ y $B_2$ son disjuntos en aristas.</li>
+<li>Los bloques $B_1$ y $B_2$ tienen como máximo un vértice en común.</li>
+<li>Si $B_1$ y $B_2$ tienen un vértice $v$ en común, entonces $v$ es un vértice de corte de $G$.</li>
+</ul>
+</blockquote>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=193081ac">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Demostración.</em></p>
+<ul>
+<li><em>(a).</em> Que dos bloques distintos cualesquiera sean disjuntos por aristas es una consecuencia inmediata del Teorema 5.8.</li>
+<li><em>(b).</em> Supongamos, por el contrario, que $B_1$ y $B_2$ tienen dos vértices distintos $u$ y $v$ en común.<ul>
+<li>Dado que $B_1$ y $B_2$ son subgrafos conexos de $G$, existe un camino $P'$ $u-v$ en $B_1$ y un camino $P''$ $u-v$ en $B_2$.</li>
+<li>Además, puesto que $B_1$ y $B_2$ son disjuntos por aristas, también lo son $P'$ y $P''$.</li>
+<li>Sea $w$ el primer vértice que $P'$ y $P''$ tienen en común después de $u$ (posiblemente $w=v$).</li>
+<li>El subcamino $Q'$ $u-w$ de $P'$ y el subcamino $Q''$ $u-w$ de $P''$ forman un ciclo en $G$ que contiene una arista $e_1$ de $B_1$ y una arista $e_2$ de $B_2$. Por lo tanto, $e_1$ y $e_2$ pertenecen al mismo bloque de $G$, lo cual es imposible.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aceca56a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><em>(c).</em> Supongamos que dos bloques $B_1$ y $B_2$ de $G$ tienen un vértice $v$ en común. Entonces, $v$ es incidente con una arista $e_1=v v_1$ en $B_1$ y una arista $e_2=v v_2$ en $B_2$.<ul>
+<li>Supongamos, por el contrario, que $v$ no es un vértice de corte de $G$.</li>
+<li>Por el Corolario 5.4, $G$ tiene un camino $v_1-v_2$ $P$ que no contiene a $v$.</li>
+<li>Entonces, $P$, junto con $v$ y las aristas $e_1$ y $e_2$, forman un ciclo que contiene a $e_1$ y $e_2$. Sin embargo, esto es imposible, ya que $e_1$ y $e_2$ pertenecen a bloques distintos de $G$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a3d8dff2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7474,6 +7926,377 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="5.3.-Conectividad">5.3. Conectividad<a class="anchor-link" href="#5.3.-Conectividad">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=050224e9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Los grafos no separables no contienen vértices de corte.</li>
+<li>En cierto sentido están más altamente conectados que los grafos conexos con vértices de corte.</li>
+<li>Esto sugiere una forma de medir la conectividad de los grafos.<ul>
+<li>Un corte de vértices (<strong>vertex-cut</strong>) en un grafo $G$ es un conjunto $U$ de vértices de $G$ tal que $G-U$ está desconectado.</li>
+<li>Un corte de vértices de cardinalidad mínima en $G$ se llama corte de vértices mínimo (<strong>minimum vertex-cut</strong>).</li>
+<li>Todo grafo que no completo tiene un corte de vértices.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=289b28c7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Si $U$ es un corte de vértices mínimo en un grafo conexo incompleto $G$, entonces $G - U$ es disociado y contiene componentes $G_1, G_2, \ldots, G_k$, donde $k \geq 2$.</li>
+<li>Cada vértice $u \in U$ es adyacente a al menos un vértice en $G_i$ para cada $i(1 \leq i \leq k)$; de lo contrario, $U-\{u\}$ también es un corte de vértices, lo cual es imposible.</li>
+<li>La estructura de dicho grafo $G$ se indica en la Figura 5.6, donde no hay aristas entre dos componentes distintos de $G-U$.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5e0620bd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/vertex-cut.png"/>
+<center>
+Figura 5.6: Un corte de vértice mínimo en un grafo
+
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=454ac9bd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Para un grafo incompleto $G$, la conectividad de vértices (o simplemente la conectividad) $\kappa(G)$ de $G$ se define como la cardinalidad de un corte de vértices mínimo de $G$<ul>
+<li>Si $G=K_n$ para algún entero positivo $n$, entonces $\kappa(G)$ se define como $n-1$.</li>
+<li>En general, la conectividad $\kappa(G)$ de un grafo $G$ es el valor mínimo de $|U|$ entre todos los subconjuntos $U$ de $V(G)$ tales que $G- U$ esté desconectado o sea trivial.</li>
+<li>Por lo tanto, para cada grafo $G$ de orden $n$,</li>
+</ul>
+</li>
+</ul>
+$$
+0 \leq \kappa(G) \leq n-1
+$$<ul>
+<li>Un grafo no trivial $G$ tiene conectividad 0 si y solo si $G$ es desconectado</li>
+<li>Un grafo $G$ tiene conectividad 1 si y solo si $G=K_2$ o $G$ es un grafo conexo con vértices de corte</li>
+<li>Un grafo $G$ tiene conectividad 2 o más si y solo si $G$ es un grafo no separable de orden 3 o más.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=13beb7c3">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Para un entero no negativo $k$, se dice que un grafo $G$ es $k$-conexo si $\kappa(G) \geq k$.</li>
+<li>Por lo tanto, un grafo $k$-conexo también es $\ell$-conexo para todo entero $\ell$ con $0 \leq \ell \leq k$.<ul>
+<li>En particular, los grafos $G_4, G_5, G_6$ y $G_7$ de la Figura 5.1 son todos 2-conexos.</li>
+<li>Los grafos $G_6$ y $G_7$ también son 3-conexos, aunque ni $G_4$ ni $G_5$ son 3-conexos.</li>
+</ul>
+</li>
+<li>Por lo tanto, $G$ es 1-conexo si y solo si $G$ es no trivial y conexo, mientras que $G$ es 2-conexo si y solo si $G$ es no separable y tiene un orden al menos 3.<ul>
+<li>En general, un grafo $G$ es $k$-conexo si y solo si la eliminación de menos de $k$ vértices no resulta en un grafo conexo o trivial.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=80797a71">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Existen otras medidas, incluyendo una común que involucra las aristas de $G$.</li>
+<li>Una corte de aristas en un grafo no trivial $G$ es un conjunto $X$ de aristas de $G$ tal que $G-X$ está conexo. Una corte de aristas $X$ de un grafo conexo $G$ es minimo si ningún subconjunto propio de $X$ es un corte de aristas de $G$.</li>
+<li>Si $X$ es una corte de aristas minimo de un grafo conexo $G$, entonces $G-X$ contiene exactamente dos componentes $G_1$ y $G_2$.<ul>
+<li>Necesariamente, entonces, $X$ consiste en todas las aristas de $G$ que unen $G_1$ y $G_2$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ea80b3c9">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Si $X$ es una arista de un grafo conexo $G$ que no es minimal, entonces existe un subconjunto propio $Y$ de $X$ que es una arista minimal.</li>
+<li>Una arista de cardinalidad mínima se denomina arista mínima.<ul>
+<li>Si bien toda arista mínima es una arista minimal, la inversa no es cierta.</li>
+<li>Para el grafo $H$ de la Figura 5.7, considérense los conjuntos $X_1=\left\{e_3, e_4, e_5\right\}, X_2=\left\{e_1, e_2, e_6\right\}$ y $X_3=\left\{e_1, e_6\right\}$ de aristas de $H$.</li>
+<li>Estos tres conjuntos son aristas porque todos los grafos $H-X_1, H-X_2$ y $H-X_3$ son desconectados. Tanto $X_1$ como $X_3$ son cortes de aristas mínimos, mientras que $X_2$ no lo es, ya que $X_3$ es un subconjunto propio de $X_2$.</li>
+<li>El conjunto $X_3$ es un corte de aristas mínimo, mientras que $X_1$ y $X_2$ no lo son.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0041e2ad">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/edges-cuts.png"/>
+<center>
+Figura 5.7: Ilustración de cortes de arista en un grafo
+
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c7d49b65">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>La conectividad de aristas $\lambda(G)$ de un grafo no trivial $G$ es la cardinalidad de un corte de aristas mínimo de $G<ul>
+<li>Mientras que definimos $\lambda\left(K_1\right)=0$.</li>
+<li>Por lo tanto, $\lambda(G)$ es el valor mínimo de $|X|$ entre todos los subconjuntos $X$ de $E(G)$ tales que $G-X$ sea un grafo desconexo o trivial. Para cada grafo $G$ de orden $n$,</li>
+</ul>
+</li>
+</ul>
+$$
+0 \leq \lambda(G) \leq n-1 .
+$$<ul>
+<li>Nótese que $\lambda(G)=0$ si y solo si $G$ es desconexo o $G$ es trivial, mientras que $\lambda(G)=1$ si y solo si $G$ es conexo y contiene un puente.<ul>
+<li>Para el grafo $H$ de la Figura 5.7, $\lambda(G)=2$, ya que $X_3=\left\{e_1, e_6\right\}$ es un corte de arista mínimo en $H$.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=93622faf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Para un entero no negativo $k$, un grafo $G$ es $k$-arista conexo si $\lambda(G) \geq k$.<ul>
+<li>Todo grafo $k$-arista conexo es $\ell$-arista conexo para todo entero $\ell$ con $0 \leq \ell \leq k$.</li>
+<li>Por lo tanto, todo grafo con 1 arista conexo es no trivial y conexo, y todo grafo con 2 aristas conexas es un grafo conexo de orden 3 o superior que no contiene puentes.</li>
+<li>Por ejemplo, los grafos $G_3, G_4$ y $G_5$ de la Figura 5.1 son grafos con 2 aristas conexas que no son 3-aristas conexas.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bca2d11b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Teorema 5.10.</strong> Para cada entero positivo $n, \lambda\left(K_n\right)=n-1$.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b9dfd89f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Demostración.</em></p>
+<ul>
+<li>Por definición, $\lambda\left(K_1\right)=0$. Sea $G=K_n$ para $n \geq 2$.</li>
+<li>Como cada vértice de $G$ tiene grado $n-1$, si eliminamos las $n-1$ aristas incidentes con un vértice, resulta un grafo inconexo. Por lo tanto, $\lambda(G) \leq n-1$.</li>
+<li>Sea ahora $X$ una arista mínima de $G$. Por lo tanto, $|X|=\lambda(G)$. Entonces $G-X$ tiene exactamente dos componentes $G_1$ y $G_2$, donde $G_1$ tiene orden $k$, por ejemplo, y $G_2$ tiene orden $n-k$. Como (1) $X$ consta de todas las aristas que unen $G_1$ y $G_2$ y (2) $G$ es completo, se deduce que $|X|=k(n-k)$. Como $k \geq 1$ y $n-k \geq 1$, tenemos $(k-1)(n-k-1) \geq 0$ y, por lo tanto,</li>
+</ul>
+$$
+(k-1)(n-k-1)=k(n-k)-n+1 \geq 0 .
+$$<p>Por lo tanto, $\lambda(G)=|X|=k(n-k) \geq n-1$. Por lo tanto, $\lambda\left(K_n\right)=n-1$.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e360c148">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Como se mencionó anteriormente, los grafos completos no contienen cortes de vértice. Sin embargo, para un grafo $G$ incompleto, la cardinalidad de un corte de vértice mínimo en $G$ nunca puede exceder la cardinalidad de cualquier corte de arista en $G$. De hecho, el siguiente teorema nos proporciona desigualdades relativas a la conectividad, la conectividad de aristas y el grado mínimo de un grafo. La demostración es similar, en parte, al argumento que acabamos de usar para demostrar que $\lambda\left(K_n\right)=n-1$ en el Teorema 5.10.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=38f50b4b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<blockquote>
+<p><strong>Teorema 5.11.</strong> Para todo grafo $G$,</p>
+$$
+\kappa(G) \leq \lambda(G) \leq \delta(G) .
+$$</blockquote>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ae614589">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>Demostración.</em></p>
+<p>Si $G$ es disociado o trivial, entonces $\kappa(G)=\lambda(G)=0$ y las desigualdades se cumplen; mientras que si $G=K_n$ para algún entero $n \geq 2$, entonces $\kappa(G)=\lambda(G)=\delta (G)=n-1$. Por lo tanto, podemos suponer que $G$ es un grafo conexo de orden $n \geq 3$ que no es completo. Por lo tanto, $\delta(G) \leq n-2$.</p>
+<p>Primero, demostramos que $\lambda(G) \leq \delta(G)$. Sea $v$ un vértice de $G$ con $\operatorname{deg} v=\delta(G)$. Dado que el conjunto de las aristas $\delta(G)$ incidentes con $v$ en $G$ es un corte de arista de $G$, se deduce que</p>
+$$
+\lambda(G) \leq \delta(G) \leq n-2
+$$
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=42198434">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Queda por demostrar que $\kappa(G) \leq \lambda(G)$. Sea $X$ una arista mínima de $G$. Entonces $|X|=\lambda(G) \leq n-2$. Necesariamente, $G-X$ contiene exactamente dos componentes $G_1$ y $G_2$. Supongamos que el orden de $G_1$ es $k$. Por lo tanto, el orden de $G_2$ es $n-k$, donde $k \geq 1$ y $n-k \geq 1$. En consecuencia, cada arista en $X$ une un vértice de $G_1$ y un vértice de $G_2$. Consideremos dos casos.</p>
+<p>Caso 1. Todo vértice de $G_1$ es adyacente en $G$ a todo vértice de $G_2$. Por lo tanto, $|X|= k(n-k)$. Como $(k-1)(n-k-1) \geq 0$, se deduce que</p>
+$$
+(k-1)(n-k-1)=k(n-k)-n+1 \geq 0
+$$<p>y, por lo tanto, $\lambda(G)=|X|=k(n-k) \geq n-1$. Sin embargo, $\lambda(G) \leq n-2$; por lo tanto, este caso no puede ocurrir.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2bbf57f2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Caso 2. Existen vértices $u$ en $G_1$ y $v$ en $G_2$ tales que $u$ y $v$ no son adyacentes en $G$. Ahora definimos un conjunto $U$ de vértices de $G$. Para cada $e \in X$, seleccionamos un vértice para $U$ de la siguiente manera. Si $u$ es incidente con $e$, entonces se elige el otro vértice en $G_2$ que es incidente con $e$ como elemento de $U$; de lo contrario, se selecciona el vértice que es incidente con $e$ y pertenece a $G_1$ como elemento de $U$. Entonces, $|U| \leq |X|$. Como $u, v \notin U$ y no hay camino $u-v$ en $G-U$, se deduce que $G-U$ es disociado y, por lo tanto, $U$ es un corte de vértice. Por lo tanto,</p>
+$$
+\kappa(G) \leq|U| \leq|X|=\lambda(G),
+$$<p>como se desea.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5976e306">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Teorema 5.12 Si $G$ es un grafo cúbico, entonces $\kappa(G)=\lambda(G)$.</p>
+<p>Demostración. Para un grafo cúbico $G$, se deduce que $\kappa(G)=\lambda(G)=0$ si y solo si $G$ es disociado. Si $\kappa(G)=3$, entonces $\lambda(G)=3$ según el Teorema 5.11. Por lo tanto, quedan dos casos: $\kappa(G)=1$ o $\kappa(G)=2$. Sea $U$ un corte mínimo de vértice de $G$. Entonces $|U|=1$ o $|U|=2$. Por lo tanto, $G-U$ es disociado. Sean $G_1$ y $G_2$ dos componentes de $G-U$. Como $G$ es cúbico, para cada $u \in U$, al menos uno de $G_1$ y $G_2$ contiene exactamente un vecino de $u$.</p>
+<p>Caso 1. $\kappa(G)=|U|=1$. Por lo tanto, $U$ consiste en un vértice de corte $u$ de G. Como algún componente de $G-U$ contiene exactamente un vecino $w$ de $u$, la arista $u w$ es un puente de $G$ y, por lo tanto, $\lambda(G)=\kappa(G)=1$.</p>
+<p>Caso 2. $\kappa(G)=|U|=2$. Sea $U=\{u, v\}$. Supongamos que cada uno de $u$ y $v$ tiene exactamente un vecino, digamos $u^{\prime}$ y $v^{\prime}$, respectivamente, en el mismo componente de $G$ $U$. (Este es el caso que se cumple si $u v \in E(G)$.) Entonces $X=\left\{u u^{\prime}, v v^{\prime}\right\}$ es un corte de arista de $G$ y $\lambda(G)=\kappa(G)=2$. (Véase la Figura 5.9(a) para la situación cuando $u$ y $v$ no son adyacentes.)</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3b905d6d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/teorem-5-12.png"/>
+<center>
+<p>Figura 5.8: Un grafo $G$ con $\lambda(G)=1$, $\kappa(G)=2$ y $\delta(G)=3$.</p>
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=10ea8a24">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<center>
+<img alt="No description has been provided for this image" src="./fig/fig-5-9.png"/>
+<center>
+Figura 5.9: Un paso en la demostración del Caso 2
+
+</center></center></div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=08a0a96a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Por lo tanto, podemos suponer que $u$ tiene un vecino $u^{\prime}$ en $G_1$ y dos vecinos en $G_2$; mientras que $v$ tiene dos vecinos en $G_1$ y un vecino $v^{\prime}$ en $G_2$ (véase la Figura 5.9(b)). Por lo tanto, $u v \notin E(G)$ y $X=\left\{u u^{\prime}, v v^{\prime}\right\}$ es una arista de corte de $G$; por lo tanto, $\lambda(G)=\kappa (G)=2$.</p>
+<p>La conectividad de un grafo $G$ de un orden $n$ y tamaño $m$ dados solo puede ser tan grande como sea posible. Por ejemplo, si $\mathrm{m}&lt;n-1$, entonces $G$ está desconectado por el Teorema 4.7 y, por lo tanto, $\kappa(G)=0$. Si $m \geq n-1$, entonces existe una cota superior precisa para $\kappa(G)$, que presentamos a continuación. (Véase el Apéndice 1 para un repaso del límite inferior y superior de un número real).</p>
+<p>Teorema 5.13 Si $G$ es un grafo de orden $n$ y tamaño $m \geq n-1$, entonces</p>
+$$
+\kappa(G) \leq\left\lfloor\frac{2 m}{n}\right\rfloor .
+$$<p>Demostración. Como la suma de los grados de los vértices de $G$ es $2 m$, el grado medio de los vértices de $G$ es $2 m / n$ y, por tanto, $\delta(G) \leq 2 m / n$. Como $\delta(G)$ es un entero, $\delta(G) \leq\lfloor 2 m / n\rfloor$. Por el teorema 5.11, $\kappa(G) \leq\lfloor 2 m / n\rfloor$.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=46d34203">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>La cota dada en el Teorema 5.13 es precisa en el sentido de que para cada dos enteros $n$ y $m$ con $1 \leq n-1 \leq m \leq\binom{ n}{2}$, existe un grafo $G$ de orden $n$ y tamaño $m$ tal que $\kappa(G)=\lfloor 2 m / n\rfloor$. Si $m=n-1$, entonces todo árbol $T$ de orden $n$ tiene la propiedad deseada, como se indica a continuación:</p>
+$$
+\kappa(T)=\left\lfloor\frac{2 m}{n}\right\rfloor=\left\lfloor\frac{2 n-2}{n}\right\rfloor=1 .
+$$<p>Por lo tanto, podemos suponer que $3 \leq n \leq m \leq\binom{ n}{2}$.
+Es útil describir una clase de grafos $H_{r, n}$ para los enteros $r$ y $n$ con $2 \leq r&lt;n$ tales que $H_{r, n}$ tiene orden $n$, es casi $r$-regular, tiene tamaño $m$ y $\kappa\left(H_{r, n}\right)=r=\lfloor 2 m / n\rfloor$. Estos grafos se denominan grafos de Harary, en honor a Frank Harary. (Volveremos a hablar de Harary en el capítulo 6). Para describir estos grafos, introducimos un nuevo concepto.</p>
+<p>Sea $G$ un grafo conexo de diámetro $d$. Para un entero $k$ con $1 \leq k \leq d$, la $k$-ésima potencia $G^k$ de $G$ es el grafo con $V\left(G^k\right)=V(G)$ tal que $u v$ es una arista de $G^k$</p>
 </div>
 </div>
 </div>
